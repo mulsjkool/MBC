@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.ttf">
+            <string>29LTKaff-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AboutTabMetadataView" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wEQ-9e-ZnU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المعلومة:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZB-Mb-kTK">
+                            <rect key="frame" x="0.0" y="7" width="85" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="4Gy-Kt-YBZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="12"/>
+                            <color key="textColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مكان المعلومة يكونح هنا" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku4-AV-Sqq">
+                            <rect key="frame" x="88" y="7" width="287" height="14"/>
+                            <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="12"/>
+                            <color key="textColor" red="0.37647058823529411" green="0.49019607843137253" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ku4-AV-Sqq" firstAttribute="top" secondItem="wEQ-9e-ZnU" secondAttribute="top" constant="7" id="8GF-NL-f32"/>
+                        <constraint firstItem="7ZB-Mb-kTK" firstAttribute="top" secondItem="wEQ-9e-ZnU" secondAttribute="top" constant="7" id="8H1-iy-hDd"/>
+                        <constraint firstAttribute="height" constant="32" id="De4-Xb-8n3"/>
+                        <constraint firstAttribute="trailing" secondItem="Ku4-AV-Sqq" secondAttribute="trailing" id="UQK-S4-04V"/>
+                        <constraint firstItem="Ku4-AV-Sqq" firstAttribute="leading" secondItem="7ZB-Mb-kTK" secondAttribute="trailing" constant="3" id="VUv-H4-wSV"/>
+                        <constraint firstItem="7ZB-Mb-kTK" firstAttribute="leading" secondItem="wEQ-9e-ZnU" secondAttribute="leading" id="omu-lC-XX9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wEQ-9e-ZnU" secondAttribute="trailing" id="MfN-0i-CnC"/>
+                <constraint firstItem="wEQ-9e-ZnU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m8c-nq-Ck0"/>
+                <constraint firstItem="wEQ-9e-ZnU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="obg-rX-ozm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containViewHeightConstraint" destination="De4-Xb-8n3" id="va6-e7-JJ4"/>
+                <outlet property="metadataLabel" destination="Ku4-AV-Sqq" id="8s6-fi-eIP"/>
+                <outlet property="titleLabel" destination="7ZB-Mb-kTK" id="EnH-QS-WdZ"/>
+                <outlet property="titleLabelWidthConstraint" destination="4Gy-Kt-YBZ" id="6mF-ai-G26"/>
+            </connections>
+        </view>
+    </objects>
+</document>

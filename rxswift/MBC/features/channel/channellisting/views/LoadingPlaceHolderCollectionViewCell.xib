@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoadingPlaceHolderCollectionViewCell" id="dMb-TC-Qyh" customClass="LoadingPlaceHolderCollectionViewCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueX-ys-t5x">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ueX-ys-t5x" secondAttribute="bottom" id="3zu-23-JAK"/>
+                <constraint firstAttribute="trailing" secondItem="ueX-ys-t5x" secondAttribute="trailing" id="GgL-Ug-3xA"/>
+                <constraint firstItem="ueX-ys-t5x" firstAttribute="leading" secondItem="dMb-TC-Qyh" secondAttribute="leading" id="oHV-gA-uL1"/>
+                <constraint firstItem="ueX-ys-t5x" firstAttribute="top" secondItem="dMb-TC-Qyh" secondAttribute="top" id="ykQ-PF-6Ph"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="IAz-Dg-AAD"/>
+            <connections>
+                <outlet property="loadingView" destination="ueX-ys-t5x" id="2ei-x8-yJK"/>
+            </connections>
+            <point key="canvasLocation" x="-118" y="-42"/>
+        </collectionViewCell>
+    </objects>
+</document>

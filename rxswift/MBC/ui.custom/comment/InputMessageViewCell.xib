@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InputMessageViewCell" rowHeight="49" id="KGk-i7-Jjw" customClass="InputMessageViewCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oAM-WL-UaH" customClass="GrowingTextView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="16" y="15" width="215" height="32"/>
+                        <color key="backgroundColor" red="0.92504876849999995" green="0.93721377849999998" blue="0.94544225930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="JAT-fe-gCp"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content=" ">
+                                <attributes>
+                                    <color key="NSColor" red="0.3766380250453949" green="0.48959815502166748" blue="0.5440593957901001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="10" name="29LTKaff-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                <color key="value" red="0.37663802499999999" green="0.48959815499999998" blue="0.54405939579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="أضف تعليقك هنا"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minHeight">
+                                <real key="value" value="32"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96G-x8-tnh">
+                        <rect key="frame" x="246" y="15" width="58" height="32"/>
+                        <color key="backgroundColor" red="0.9390240312" green="0.3238713741" blue="0.31272161009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="Hl0-Hx-rGG"/>
+                            <constraint firstAttribute="height" constant="32" id="h5B-Du-lof"/>
+                        </constraints>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="إضافة">
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="10" name="29LTKaff-Regular"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvd-h8-YRs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                        <connections>
+                            <action selector="inputMessageTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3kI-A2-BRp"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cvd-h8-YRs" secondAttribute="bottom" id="4DZ-w3-MtA"/>
+                    <constraint firstItem="96G-x8-tnh" firstAttribute="leading" secondItem="oAM-WL-UaH" secondAttribute="trailing" constant="15" id="8n0-If-igk"/>
+                    <constraint firstAttribute="trailing" secondItem="cvd-h8-YRs" secondAttribute="trailing" id="A9n-kt-Swg"/>
+                    <constraint firstItem="oAM-WL-UaH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="AaQ-QF-Wbk"/>
+                    <constraint firstItem="96G-x8-tnh" firstAttribute="centerY" secondItem="oAM-WL-UaH" secondAttribute="centerY" id="BbJ-bA-lEQ"/>
+                    <constraint firstItem="oAM-WL-UaH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="S46-zz-b2p"/>
+                    <constraint firstAttribute="trailing" secondItem="96G-x8-tnh" secondAttribute="trailing" constant="16" id="cO0-rZ-8IS"/>
+                    <constraint firstItem="cvd-h8-YRs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="f6I-yI-RB9"/>
+                    <constraint firstItem="cvd-h8-YRs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lI9-5F-m7R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coverButton" destination="cvd-h8-YRs" id="hw4-Dd-VF8"/>
+                <outlet property="messageTextView" destination="oAM-WL-UaH" id="31l-V9-Nra"/>
+                <outlet property="sendButton" destination="96G-x8-tnh" id="HRr-01-N5h"/>
+                <outlet property="sendButtonWidthConstraint" destination="Hl0-Hx-rGG" id="Cog-Vz-i5i"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="34"/>
+        </tableViewCell>
+    </objects>
+</document>

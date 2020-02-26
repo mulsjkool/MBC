@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+        <array key="29LT-Kaff-Ultra-Light.otf">
+            <string>29LTKaff-UltraLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardImageItemCollectionViewCell.id" id="gTV-IL-0wX" customClass="CardImageItemCollectionViewCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTI-01-Kex">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lfz-Tl-1PG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmV-t1-P4L" userLabel="View - see more">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frk-py-vXY" userLabel="+24 - see more">
+                                        <rect key="frame" x="122" y="73" width="76" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="7i1-EW-xW5"/>
+                                            <constraint firstAttribute="height" constant="35" id="7p0-92-g4N"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="29LTKaff-UltraLight" family="29LT Kaff" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Frk-py-vXY" firstAttribute="centerX" secondItem="hmV-t1-P4L" secondAttribute="centerX" id="2ID-Js-LqL"/>
+                                    <constraint firstItem="Frk-py-vXY" firstAttribute="centerY" secondItem="hmV-t1-P4L" secondAttribute="centerY" id="8J9-Zz-X7P"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_play_dark" translatesAutoresizingMaskIntoConstraints="NO" id="l97-HH-Q6j">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                            </imageView>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1I-1I-41q" userLabel="View-count">
+                                <rect key="frame" x="248" y="140" width="56" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuJ-Im-P5U">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Obl-pw-4kD"/>
+                                    <constraint firstAttribute="width" constant="56" id="QNx-ZA-1cj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lfz-Tl-1PG" firstAttribute="top" secondItem="GTI-01-Kex" secondAttribute="top" id="1eW-2x-S45"/>
+                            <constraint firstAttribute="bottom" secondItem="g1I-1I-41q" secondAttribute="bottom" constant="16" id="3I3-OV-fMq"/>
+                            <constraint firstAttribute="bottom" secondItem="hmV-t1-P4L" secondAttribute="bottom" id="We7-rn-6sX"/>
+                            <constraint firstAttribute="trailing" secondItem="hmV-t1-P4L" secondAttribute="trailing" id="dPz-RL-MTg"/>
+                            <constraint firstItem="Lfz-Tl-1PG" firstAttribute="leading" secondItem="GTI-01-Kex" secondAttribute="leading" id="g2u-FM-f4w"/>
+                            <constraint firstAttribute="bottom" secondItem="l97-HH-Q6j" secondAttribute="bottom" id="gR0-mc-xW9"/>
+                            <constraint firstItem="l97-HH-Q6j" firstAttribute="leading" secondItem="GTI-01-Kex" secondAttribute="leading" id="gud-ae-enz"/>
+                            <constraint firstAttribute="trailing" secondItem="g1I-1I-41q" secondAttribute="trailing" constant="16" id="iYj-sh-3oO"/>
+                            <constraint firstItem="hmV-t1-P4L" firstAttribute="leading" secondItem="GTI-01-Kex" secondAttribute="leading" id="kWi-Mk-36e"/>
+                            <constraint firstItem="hmV-t1-P4L" firstAttribute="top" secondItem="GTI-01-Kex" secondAttribute="top" id="kfb-JM-sdS"/>
+                            <constraint firstAttribute="trailing" secondItem="l97-HH-Q6j" secondAttribute="trailing" id="lcT-Bw-0cX"/>
+                            <constraint firstAttribute="trailing" secondItem="Lfz-Tl-1PG" secondAttribute="trailing" id="o6h-Ji-QHx"/>
+                            <constraint firstItem="l97-HH-Q6j" firstAttribute="top" secondItem="GTI-01-Kex" secondAttribute="top" id="r3h-af-NS3"/>
+                            <constraint firstAttribute="bottom" secondItem="Lfz-Tl-1PG" secondAttribute="bottom" id="xaF-lp-ygn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GTI-01-Kex" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3bu-rS-p45"/>
+                <constraint firstAttribute="trailing" secondItem="GTI-01-Kex" secondAttribute="trailing" id="Jzy-YH-VpS"/>
+                <constraint firstAttribute="bottom" secondItem="GTI-01-Kex" secondAttribute="bottom" id="ZLU-Dv-GDU"/>
+                <constraint firstItem="GTI-01-Kex" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="chE-hI-3Lo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="50" height="74"/>
+            <connections>
+                <outlet property="imageViewPlay" destination="l97-HH-Q6j" id="C6L-5N-N14"/>
+                <outlet property="imageview" destination="Lfz-Tl-1PG" id="7S0-qp-OZo"/>
+                <outlet property="lbSeeMore" destination="Frk-py-vXY" id="zUx-d7-Jg9"/>
+                <outlet property="totalLabel" destination="AuJ-Im-P5U" id="Kgl-br-uJr"/>
+                <outlet property="viewCount" destination="g1I-1I-41q" id="Puz-zD-nYR"/>
+                <outlet property="viewSeeMore" destination="hmV-t1-P4L" id="GEL-24-bto"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="-6"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icn_play_dark" width="48" height="48"/>
+    </resources>
+</document>

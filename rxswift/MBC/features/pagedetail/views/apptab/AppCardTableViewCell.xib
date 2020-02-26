@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppCardTableViewCellid" rowHeight="644" id="KGk-i7-Jjw" customClass="AppCardTableViewCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="603"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="602.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wS2-tK-Z50" customClass="ActivityCardView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="djn-s3-HH7"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHj-al-Zqr" customClass="AvatarFullScreenView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="g3l-E3-Bje"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="abq-GI-DPR">
+                        <rect key="frame" x="0.0" y="80" width="320" height="320"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="abq-GI-DPR" secondAttribute="height" multiplier="1:1" id="bmO-In-fEJ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aq9-1l-dMN" userLabel="View - interest" customClass="InterestView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="416" width="320" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Mai-ls-fTH"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sat-aT-S6t" userLabel="Label-title">
+                        <rect key="frame" x="16" y="448" width="288" height="0.0"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="18"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90X-zD-8g9" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="16" y="460" width="288" height="18"/>
+                        <attributedString key="attributedText">
+                            <fragment content="    ">
+                                <attributes>
+                                    <color key="NSColor" red="0.37647058823529411" green="0.49019607843137253" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="29LTKaff-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="copyableAction" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dF0-Jz-wHz" userLabel="View - like comment share" customClass="LikeCommentShareView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="538.5" width="320" height="48"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="48" id="Lxp-TU-MLj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Suz-cb-gDq" userLabel="View - seperator">
+                        <rect key="frame" x="0.0" y="586.5" width="320" height="16"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="L0g-Kr-pWq"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VZ-Nd-l6F">
+                        <rect key="frame" x="16" y="493.5" width="288" height="40"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.32549019607843138" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7VZ-Nd-l6F" secondAttribute="height" multiplier="36:5" id="LJ7-tR-qI4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="12"/>
+                        <state key="normal" title="شارك الان"/>
+                        <connections>
+                            <action selector="shareClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oWH-0K-mXy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sat-aT-S6t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0bo-gr-b6K"/>
+                    <constraint firstItem="Suz-cb-gDq" firstAttribute="top" secondItem="dF0-Jz-wHz" secondAttribute="bottom" id="2Ie-e0-59o"/>
+                    <constraint firstAttribute="trailing" secondItem="90X-zD-8g9" secondAttribute="trailing" constant="16" id="3n4-Or-QaZ"/>
+                    <constraint firstItem="90X-zD-8g9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8EA-yi-dUz"/>
+                    <constraint firstItem="sHj-al-Zqr" firstAttribute="top" secondItem="wS2-tK-Z50" secondAttribute="bottom" id="A3a-5v-gUh"/>
+                    <constraint firstItem="abq-GI-DPR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B1j-bJ-c7a"/>
+                    <constraint firstItem="Suz-cb-gDq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="F3q-gl-NMy"/>
+                    <constraint firstItem="abq-GI-DPR" firstAttribute="top" secondItem="sHj-al-Zqr" secondAttribute="bottom" id="Gtw-VA-pE6"/>
+                    <constraint firstItem="Aq9-1l-dMN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HyN-JF-2XK"/>
+                    <constraint firstItem="wS2-tK-Z50" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="I0k-5J-5fg"/>
+                    <constraint firstItem="Aq9-1l-dMN" firstAttribute="top" secondItem="abq-GI-DPR" secondAttribute="bottom" constant="16" id="LbL-2m-Z8j"/>
+                    <constraint firstItem="Sat-aT-S6t" firstAttribute="top" secondItem="Aq9-1l-dMN" secondAttribute="bottom" constant="12" id="NzM-xf-IgI"/>
+                    <constraint firstItem="dF0-Jz-wHz" firstAttribute="top" secondItem="7VZ-Nd-l6F" secondAttribute="bottom" constant="5" id="ONB-Nf-34d"/>
+                    <constraint firstItem="wS2-tK-Z50" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ogx-bg-e6I"/>
+                    <constraint firstItem="90X-zD-8g9" firstAttribute="top" secondItem="Sat-aT-S6t" secondAttribute="bottom" constant="12" id="Ohq-IP-lP6"/>
+                    <constraint firstItem="dF0-Jz-wHz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rx0-Ks-ydl"/>
+                    <constraint firstAttribute="trailing" secondItem="abq-GI-DPR" secondAttribute="trailing" id="Tl6-9Z-tJb"/>
+                    <constraint firstItem="7VZ-Nd-l6F" firstAttribute="top" secondItem="90X-zD-8g9" secondAttribute="bottom" constant="15" id="ULE-lE-3a0"/>
+                    <constraint firstAttribute="trailing" secondItem="Aq9-1l-dMN" secondAttribute="trailing" id="V7H-e1-i3b"/>
+                    <constraint firstAttribute="trailing" secondItem="Sat-aT-S6t" secondAttribute="trailing" constant="16" id="X3v-xF-By8"/>
+                    <constraint firstAttribute="bottom" secondItem="Suz-cb-gDq" secondAttribute="bottom" id="deI-wM-3Jg"/>
+                    <constraint firstAttribute="trailing" secondItem="wS2-tK-Z50" secondAttribute="trailing" id="f8E-63-1jy"/>
+                    <constraint firstAttribute="trailing" secondItem="sHj-al-Zqr" secondAttribute="trailing" id="fUb-3n-OGR"/>
+                    <constraint firstAttribute="trailing" secondItem="Suz-cb-gDq" secondAttribute="trailing" id="fdm-zk-2qe"/>
+                    <constraint firstItem="sHj-al-Zqr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="g6Z-L9-IiP"/>
+                    <constraint firstAttribute="trailing" secondItem="dF0-Jz-wHz" secondAttribute="trailing" id="liC-Fj-aay"/>
+                    <constraint firstAttribute="trailing" secondItem="7VZ-Nd-l6F" secondAttribute="trailing" constant="16" id="mgI-RK-Xlz"/>
+                    <constraint firstItem="7VZ-Nd-l6F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vfA-8H-xSy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityCardView" destination="wS2-tK-Z50" id="UWj-K7-jWl"/>
+                <outlet property="activityCardViewHeightConstraint" destination="djn-s3-HH7" id="bNO-ns-9wL"/>
+                <outlet property="appImageView" destination="abq-GI-DPR" id="LrA-bi-Uin"/>
+                <outlet property="authorView" destination="sHj-al-Zqr" id="vlH-3X-z9u"/>
+                <outlet property="btnShare" destination="7VZ-Nd-l6F" id="2yh-de-pz7"/>
+                <outlet property="descriptionLabelTopConstraint" destination="Ohq-IP-lP6" id="CHw-mT-aP7"/>
+                <outlet property="interestView" destination="Aq9-1l-dMN" id="aR5-xG-vmu"/>
+                <outlet property="interestViewHeightConstraint" destination="Mai-ls-fTH" id="rdv-g5-HJe"/>
+                <outlet property="interestViewTopConstraint" destination="LbL-2m-Z8j" id="xUD-ST-RYf"/>
+                <outlet property="lbDescription" destination="90X-zD-8g9" id="KOo-4M-CjV"/>
+                <outlet property="titleLabel" destination="Sat-aT-S6t" id="aZJ-H3-ufn"/>
+                <outlet property="titleLabelTopConstraint" destination="NzM-xf-IgI" id="rQg-HE-Ju3"/>
+                <outlet property="viewLikeCommentShare" destination="dF0-Jz-wHz" id="zma-LY-ei3"/>
+            </connections>
+            <point key="canvasLocation" x="-241" y="100"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,16 @@
+PODS:
+  - MisterFusion (5.0.0)
+
+DEPENDENCIES:
+  - MisterFusion (from `../`)
+
+EXTERNAL SOURCES:
+  MisterFusion:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MisterFusion: 536b0f57d2d4b775e3c9ce436e211ed293c5e01a
+
+PODFILE CHECKSUM: 697854e68eca36a1daa2f08cd9769007f4aacc68
+
+COCOAPODS: 1.8.1

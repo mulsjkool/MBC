@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoSeekBarView" customModule="MBC" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="hzq-GO-UDA"/>
+                <outlet property="lenghtTimeLabel" destination="mQK-wi-h5Z" id="64S-4x-hjC"/>
+                <outlet property="playingTimeLabel" destination="Ms5-yY-V3Q" id="JAo-gc-Mxq"/>
+                <outlet property="progressiew" destination="ssf-8q-5ia" id="O2c-N6-biZ"/>
+                <outlet property="seekBarView" destination="f6B-5Q-rbQ" id="jUs-3L-ums"/>
+                <outlet property="timeSeekSlider" destination="wr7-Od-bq0" id="owj-3j-wuW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="18"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ugq-ID-RLe" userLabel="View - Content">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="18"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms5-yY-V3Q" userLabel="01:23 - playing time">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="BV2-QB-ZgJ"/>
+                                <constraint firstAttribute="width" constant="50" id="uOb-Bi-LbJ"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="00:00">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" size="12" name="29LTKaff-SemiBold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6B-5Q-rbQ" userLabel="View - seek">
+                            <rect key="frame" x="55" y="0.0" width="265" height="18"/>
+                            <subviews>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ssf-8q-5ia">
+                                    <rect key="frame" x="0.0" y="7" width="265" height="4"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="4" id="Eeu-h8-xaA"/>
+                                    </constraints>
+                                    <color key="progressTintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                    <color key="trackTintColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                </progressView>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wr7-Od-bq0" customClass="SeekTimeSlider" customModule="MBC" customModuleProvider="target">
+                                    <rect key="frame" x="-2" y="-6.5" width="269" height="31"/>
+                                </slider>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="wr7-Od-bq0" secondAttribute="trailing" id="FUC-jR-gF0"/>
+                                <constraint firstItem="ssf-8q-5ia" firstAttribute="centerY" secondItem="f6B-5Q-rbQ" secondAttribute="centerY" id="Icr-eT-AEC"/>
+                                <constraint firstItem="wr7-Od-bq0" firstAttribute="leading" secondItem="f6B-5Q-rbQ" secondAttribute="leading" id="Jr9-Et-xCU"/>
+                                <constraint firstItem="ssf-8q-5ia" firstAttribute="leading" secondItem="f6B-5Q-rbQ" secondAttribute="leading" id="N30-9k-abP"/>
+                                <constraint firstAttribute="trailing" secondItem="ssf-8q-5ia" secondAttribute="trailing" id="mUt-sV-e0S"/>
+                                <constraint firstItem="wr7-Od-bq0" firstAttribute="centerY" secondItem="f6B-5Q-rbQ" secondAttribute="centerY" id="uxl-1z-GcW"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQK-wi-h5Z" userLabel="01:23 - end time">
+                            <rect key="frame" x="325" y="0.0" width="50" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="GG8-1R-l6L"/>
+                                <constraint firstAttribute="width" constant="50" id="RCp-bM-nF0"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="00:00">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" size="12" name="29LTKaff-SemiBold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="f6B-5Q-rbQ" secondAttribute="bottom" id="8cf-qE-oLt"/>
+                        <constraint firstItem="mQK-wi-h5Z" firstAttribute="leading" secondItem="f6B-5Q-rbQ" secondAttribute="trailing" constant="5" id="CKb-qK-yef"/>
+                        <constraint firstItem="f6B-5Q-rbQ" firstAttribute="leading" secondItem="Ms5-yY-V3Q" secondAttribute="trailing" constant="5" id="Eyj-ZF-d62"/>
+                        <constraint firstAttribute="trailing" secondItem="mQK-wi-h5Z" secondAttribute="trailing" id="YaJ-TG-gPi"/>
+                        <constraint firstItem="mQK-wi-h5Z" firstAttribute="top" secondItem="Ugq-ID-RLe" secondAttribute="top" id="gfF-te-plI"/>
+                        <constraint firstItem="Ms5-yY-V3Q" firstAttribute="top" secondItem="Ugq-ID-RLe" secondAttribute="top" id="xUH-O2-giA"/>
+                        <constraint firstItem="Ms5-yY-V3Q" firstAttribute="leading" secondItem="Ugq-ID-RLe" secondAttribute="leading" id="xjo-sO-zei"/>
+                        <constraint firstItem="f6B-5Q-rbQ" firstAttribute="top" secondItem="Ugq-ID-RLe" secondAttribute="top" id="yx6-gT-oCo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ugq-ID-RLe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4cd-FA-hKc"/>
+                <constraint firstItem="Ugq-ID-RLe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FuL-Ct-C7a"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ugq-ID-RLe" secondAttribute="bottom" id="pbr-pz-0oF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ugq-ID-RLe" secondAttribute="trailing" id="uok-gD-deo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-53.5" y="243"/>
+        </view>
+    </objects>
+</document>

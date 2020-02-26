@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PhotoNoCustomAlbumTableViewCellid" id="KGk-i7-Jjw" customClass="PhotoNoCustomAlbumTableViewCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awB-EG-xGR" userLabel="View - Count image">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sR5-im-5Mv" userLabel="Label - total">
+                                <rect key="frame" x="16" y="11" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wp1-Gc-6rK"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Total">
+                                        <attributes>
+                                            <color key="NSColor" red="0.37590897083282471" green="0.49081522226333618" blue="0.54416453838348389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="10" name="29LTKaff-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgd-C1-JPL" userLabel="Label - images">
+                                <rect key="frame" x="16" y="11" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="paJ-AJ-IM3"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Images">
+                                        <attributes>
+                                            <color key="NSColor" red="0.37590897083282471" green="0.49081522226333618" blue="0.54416453838348389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="29LTKaff-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wgd-C1-JPL" firstAttribute="leading" secondItem="awB-EG-xGR" secondAttribute="leading" constant="16" id="4Gu-dH-47z"/>
+                            <constraint firstAttribute="trailing" secondItem="sR5-im-5Mv" secondAttribute="trailing" constant="16" id="Ghg-9l-Ugk"/>
+                            <constraint firstItem="sR5-im-5Mv" firstAttribute="centerY" secondItem="awB-EG-xGR" secondAttribute="centerY" id="OJe-wC-SRL"/>
+                            <constraint firstItem="wgd-C1-JPL" firstAttribute="centerY" secondItem="awB-EG-xGR" secondAttribute="centerY" id="Vg9-Vo-z8b"/>
+                            <constraint firstItem="sR5-im-5Mv" firstAttribute="leading" secondItem="awB-EG-xGR" secondAttribute="leading" constant="16" id="fbP-35-Q6m"/>
+                            <constraint firstAttribute="trailing" secondItem="wgd-C1-JPL" secondAttribute="trailing" constant="16" id="twL-uO-DGP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="awB-EG-xGR" secondAttribute="bottom" id="9GD-NZ-UaW"/>
+                    <constraint firstAttribute="trailing" secondItem="awB-EG-xGR" secondAttribute="trailing" id="DY7-xb-8jG"/>
+                    <constraint firstItem="awB-EG-xGR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hYB-CJ-1Lq"/>
+                    <constraint firstItem="awB-EG-xGR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="x5k-cM-rpS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="awB-EG-xGR" id="XtU-tm-ga5"/>
+                <outlet property="imageLabel" destination="wgd-C1-JPL" id="dlO-Yl-w7J"/>
+                <outlet property="totalLabel" destination="sR5-im-5Mv" id="bp2-sS-xGX"/>
+            </connections>
+            <point key="canvasLocation" x="346.5" y="90"/>
+        </tableViewCell>
+    </objects>
+</document>

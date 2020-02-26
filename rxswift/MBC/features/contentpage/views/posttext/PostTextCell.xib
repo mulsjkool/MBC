@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTextCell" id="vLq-KA-I0F" customClass="PostTextCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vLq-KA-I0F" id="3P9-Pn-fvV">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="210.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsS-oM-45X" customClass="InterestView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="17" width="375" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Muk-5s-h9e"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAb-y9-IjR">
+                        <rect key="frame" x="16" y="49" width="343" height="0.0"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="18"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.1960784314" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxv-35-Nmu" customClass="AvatarFullScreenView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="66" width="375" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="sgq-Oi-dwn"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDZ-1R-Dvf" customClass="LikeCommentShareView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="146" width="375" height="48"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="GVC-OI-Ogo"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBK-6F-2N5">
+                        <rect key="frame" x="0.0" y="194" width="375" height="17"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Zur-NG-yED"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kxv-35-Nmu" firstAttribute="top" secondItem="tAb-y9-IjR" secondAttribute="bottom" constant="17" id="13P-1f-PWK"/>
+                    <constraint firstAttribute="trailing" secondItem="tAb-y9-IjR" secondAttribute="trailing" constant="16" id="2UZ-et-WZ7"/>
+                    <constraint firstAttribute="trailing" secondItem="LsS-oM-45X" secondAttribute="trailing" id="3QD-tZ-w8Z"/>
+                    <constraint firstItem="LsS-oM-45X" firstAttribute="top" secondItem="3P9-Pn-fvV" secondAttribute="top" constant="17" id="764-Wm-T0G"/>
+                    <constraint firstItem="XBK-6F-2N5" firstAttribute="top" secondItem="XDZ-1R-Dvf" secondAttribute="bottom" id="7r3-mt-bGu"/>
+                    <constraint firstItem="LsS-oM-45X" firstAttribute="leading" secondItem="3P9-Pn-fvV" secondAttribute="leading" id="9uX-G4-ViH"/>
+                    <constraint firstAttribute="trailing" secondItem="XDZ-1R-Dvf" secondAttribute="trailing" id="DzB-fc-YVr"/>
+                    <constraint firstItem="kxv-35-Nmu" firstAttribute="leading" secondItem="3P9-Pn-fvV" secondAttribute="leading" id="Ed7-Jw-PPo"/>
+                    <constraint firstAttribute="bottom" secondItem="XBK-6F-2N5" secondAttribute="bottom" id="K60-7R-TPc"/>
+                    <constraint firstAttribute="trailing" secondItem="kxv-35-Nmu" secondAttribute="trailing" id="L3U-NG-36h"/>
+                    <constraint firstItem="tAb-y9-IjR" firstAttribute="leading" secondItem="3P9-Pn-fvV" secondAttribute="leading" constant="16" id="NUs-tN-VD1"/>
+                    <constraint firstAttribute="trailing" secondItem="XBK-6F-2N5" secondAttribute="trailing" id="WYx-AG-YUc"/>
+                    <constraint firstItem="tAb-y9-IjR" firstAttribute="top" secondItem="LsS-oM-45X" secondAttribute="bottom" constant="12" id="eyx-Es-03s"/>
+                    <constraint firstItem="XDZ-1R-Dvf" firstAttribute="leading" secondItem="3P9-Pn-fvV" secondAttribute="leading" id="hNE-gU-kUj"/>
+                    <constraint firstItem="XBK-6F-2N5" firstAttribute="leading" secondItem="3P9-Pn-fvV" secondAttribute="leading" id="jb0-St-LU0"/>
+                    <constraint firstItem="XDZ-1R-Dvf" firstAttribute="top" secondItem="kxv-35-Nmu" secondAttribute="bottom" id="vYa-8r-eiq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorView" destination="kxv-35-Nmu" id="sLg-e5-Xrp"/>
+                <outlet property="descriptionLabel" destination="tAb-y9-IjR" id="Xwj-dO-Vqu"/>
+                <outlet property="descriptionTopConstraint" destination="eyx-Es-03s" id="L65-rO-Lcx"/>
+                <outlet property="interestView" destination="LsS-oM-45X" id="7Fj-0s-Bh6"/>
+                <outlet property="interestViewHeightConstraint" destination="Muk-5s-h9e" id="ygN-hr-qVA"/>
+                <outlet property="interestViewTopConstraint" destination="764-Wm-T0G" id="VaB-eZ-AJ7"/>
+                <outlet property="likeCommentShareView" destination="XDZ-1R-Dvf" id="tEY-nc-ojZ"/>
+            </connections>
+            <point key="canvasLocation" x="10" y="-32"/>
+        </tableViewCell>
+    </objects>
+</document>

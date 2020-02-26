@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:iCarousel.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Tests">
+      <Group
+         location = "container:"
+         name = "Events">
+         <FileRef
+            location = "group:Tests/Events/iCarouselTest.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "Scrolling">
+         <FileRef
+            location = "group:Tests/Scrolling/iCarouselTest.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>

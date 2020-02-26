@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Semi-Bold.ttf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentFilterCellId" rowHeight="50" id="isy-SV-2Ui" customClass="ContentFilterCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="isy-SV-2Ui" id="JhZ-aF-ZDv">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D86-fd-KGe">
+                        <rect key="frame" x="16" y="16" width="343" height="16.5"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="12"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTC-Cr-BZJ">
+                        <rect key="frame" x="0.0" y="48.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.93725490196078431" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8Vy-uY-p4y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UTC-Cr-BZJ" secondAttribute="bottom" id="Cjq-Uk-tFd"/>
+                    <constraint firstItem="UTC-Cr-BZJ" firstAttribute="leading" secondItem="JhZ-aF-ZDv" secondAttribute="leading" id="Hrt-eI-0wS"/>
+                    <constraint firstAttribute="trailing" secondItem="UTC-Cr-BZJ" secondAttribute="trailing" id="O23-9h-62Y"/>
+                    <constraint firstItem="D86-fd-KGe" firstAttribute="leading" secondItem="JhZ-aF-ZDv" secondAttribute="leading" constant="16" id="RCi-SW-lcD"/>
+                    <constraint firstItem="D86-fd-KGe" firstAttribute="top" secondItem="JhZ-aF-ZDv" secondAttribute="top" constant="16" id="VWa-rV-nqm"/>
+                    <constraint firstItem="UTC-Cr-BZJ" firstAttribute="top" secondItem="D86-fd-KGe" secondAttribute="bottom" constant="16" id="p0X-p7-cZg"/>
+                    <constraint firstAttribute="trailing" secondItem="D86-fd-KGe" secondAttribute="trailing" constant="16" id="zZE-2E-vr1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="D86-fd-KGe" id="B05-jj-zzD"/>
+            </connections>
+            <point key="canvasLocation" x="-105" y="-18"/>
+        </tableViewCell>
+    </objects>
+</document>

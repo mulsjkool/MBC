@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BundleContentViewController" customModule="MBC" customModuleProvider="target">
+            <connections>
+                <outlet property="adsContainerView" destination="FzK-hz-GrB" id="pbd-cC-eH1"/>
+                <outlet property="bundleSponsorViewHeight" destination="YqM-cw-D7E" id="Bv2-2g-cBI"/>
+                <outlet property="containerScrollView" destination="lwB-5e-Ke5" id="Njc-sS-19l"/>
+                <outlet property="contentScrollHeightConstraint" destination="8ij-QZ-xxe" id="Tq9-i2-BGh"/>
+                <outlet property="headerTopConstraint" destination="2Eb-1T-5cJ" id="FXh-Ro-qhz"/>
+                <outlet property="headerView" destination="JAA-b9-Xc5" id="rIQ-an-Icb"/>
+                <outlet property="headerViewHeight" destination="mn1-p6-nJB" id="ge4-iO-Qkf"/>
+                <outlet property="scrollView" destination="yhk-co-YV2" id="dUq-YG-vIp"/>
+                <outlet property="view" destination="iN0-l3-epB" id="S8Z-9O-Qug"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAA-b9-Xc5" userLabel="Header View" customClass="BundleHeaderView" customModule="MBC" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="375" height="48"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="mn1-p6-nJB"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwB-5e-Ke5" userLabel="Container Scroll View">
+                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPx-eE-GH2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="599.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FzK-hz-GrB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" id="YqM-cw-D7E"/>
+                                    </constraints>
+                                </view>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhk-co-YV2">
+                                    <rect key="frame" x="0.0" y="0.5" width="375" height="599"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="599" id="8ij-QZ-xxe"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="fee-hK-1ET"/>
+                                    </connections>
+                                </scrollView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="FzK-hz-GrB" firstAttribute="top" secondItem="BPx-eE-GH2" secondAttribute="top" id="AVC-XB-6pY"/>
+                                <constraint firstItem="yhk-co-YV2" firstAttribute="leading" secondItem="BPx-eE-GH2" secondAttribute="leading" id="Ie7-An-43C"/>
+                                <constraint firstAttribute="bottom" secondItem="yhk-co-YV2" secondAttribute="bottom" id="gTg-lE-kgx"/>
+                                <constraint firstAttribute="trailing" secondItem="yhk-co-YV2" secondAttribute="trailing" id="jrl-XS-iuT"/>
+                                <constraint firstItem="yhk-co-YV2" firstAttribute="top" secondItem="FzK-hz-GrB" secondAttribute="bottom" id="q8e-aB-aFp"/>
+                                <constraint firstItem="FzK-hz-GrB" firstAttribute="leading" secondItem="BPx-eE-GH2" secondAttribute="leading" id="rUy-6u-QDp"/>
+                                <constraint firstAttribute="trailing" secondItem="FzK-hz-GrB" secondAttribute="trailing" id="xqc-6B-jDP"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="BPx-eE-GH2" firstAttribute="leading" secondItem="lwB-5e-Ke5" secondAttribute="leading" id="JjI-Pt-xVB"/>
+                        <constraint firstAttribute="bottom" secondItem="BPx-eE-GH2" secondAttribute="bottom" id="KQl-iY-1yb"/>
+                        <constraint firstAttribute="trailing" secondItem="BPx-eE-GH2" secondAttribute="trailing" id="iAW-VU-9Le"/>
+                        <constraint firstItem="BPx-eE-GH2" firstAttribute="top" secondItem="lwB-5e-Ke5" secondAttribute="top" id="yKz-NX-elr"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="EAG-1K-DQv"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JAA-b9-Xc5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2Eb-1T-5cJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lwB-5e-Ke5" secondAttribute="trailing" id="3e9-QP-26V"/>
+                <constraint firstItem="JAA-b9-Xc5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8hi-8M-W79"/>
+                <constraint firstItem="BPx-eE-GH2" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="ClZ-eO-vJR"/>
+                <constraint firstItem="lwB-5e-Ke5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QFa-TY-R4W"/>
+                <constraint firstItem="JAA-b9-Xc5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="aNx-DV-HGa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lwB-5e-Ke5" secondAttribute="bottom" id="jvr-vM-ifv"/>
+                <constraint firstItem="lwB-5e-Ke5" firstAttribute="top" secondItem="JAA-b9-Xc5" secondAttribute="bottom" id="nT0-M3-xfd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+        <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="3z1-by-2eo">
+            <point key="canvasLocation" x="558" y="53"/>
+        </pageViewController>
+    </objects>
+</document>

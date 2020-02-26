@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmbedHeaderCell" id="28w-Ql-atY" customClass="EmbedHeaderCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="28w-Ql-atY" id="usv-X7-UNB">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="183.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amn-I8-JU4" customClass="EmbeddedWebView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="16" y="0.0" width="343" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="8nu-NV-OsI"/>
+                        </constraints>
+                    </webView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWw-GR-Gbd" customClass="InterestView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1so-Sf-gnA"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugg-Ze-GBq">
+                        <rect key="frame" x="16" y="32" width="343" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="12"/>
+                        <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytj-4T-M70" userLabel="Author View" customClass="AvatarFullScreenView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="40" width="375" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="gSW-T4-6uQ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHe-Cr-zhD" userLabel="LikeShareComment View" customClass="LikeCommentShareView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="120" width="375" height="48"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="Yyd-qp-Bqd"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PL7-Ij-YT2">
+                        <rect key="frame" x="0.0" y="168" width="375" height="16"/>
+                        <color key="backgroundColor" red="0.92504876852035522" green="0.93721377849578857" blue="0.94544225931167603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="uMd-to-EUN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ytj-4T-M70" secondAttribute="trailing" id="1C4-Ge-dYw"/>
+                    <constraint firstAttribute="trailing" secondItem="ugg-Ze-GBq" secondAttribute="trailing" constant="16" id="Gap-cP-n4K"/>
+                    <constraint firstItem="amn-I8-JU4" firstAttribute="top" secondItem="usv-X7-UNB" secondAttribute="top" id="JqK-ma-Wb5"/>
+                    <constraint firstAttribute="trailing" secondItem="RHe-Cr-zhD" secondAttribute="trailing" id="LoI-hI-Pwv"/>
+                    <constraint firstItem="ugg-Ze-GBq" firstAttribute="leading" secondItem="usv-X7-UNB" secondAttribute="leading" constant="16" id="OWz-KC-SAl"/>
+                    <constraint firstItem="ytj-4T-M70" firstAttribute="leading" secondItem="usv-X7-UNB" secondAttribute="leading" id="Rtx-vf-hTF"/>
+                    <constraint firstItem="RHe-Cr-zhD" firstAttribute="leading" secondItem="usv-X7-UNB" secondAttribute="leading" id="TpN-KK-CK5"/>
+                    <constraint firstItem="HWw-GR-Gbd" firstAttribute="leading" secondItem="usv-X7-UNB" secondAttribute="leading" id="aQp-Oz-Mi0"/>
+                    <constraint firstAttribute="trailing" secondItem="HWw-GR-Gbd" secondAttribute="trailing" id="aoO-jX-4RY"/>
+                    <constraint firstAttribute="bottom" secondItem="PL7-Ij-YT2" secondAttribute="bottom" id="gT9-A0-sXe"/>
+                    <constraint firstItem="PL7-Ij-YT2" firstAttribute="leading" secondItem="usv-X7-UNB" secondAttribute="leading" id="iCy-wO-k3B"/>
+                    <constraint firstAttribute="trailing" secondItem="PL7-Ij-YT2" secondAttribute="trailing" id="kuc-yA-LoE"/>
+                    <constraint firstItem="RHe-Cr-zhD" firstAttribute="top" secondItem="ytj-4T-M70" secondAttribute="bottom" id="lAx-m8-ttq"/>
+                    <constraint firstItem="ytj-4T-M70" firstAttribute="top" secondItem="ugg-Ze-GBq" secondAttribute="bottom" constant="8" id="orx-Zv-1gw"/>
+                    <constraint firstItem="ugg-Ze-GBq" firstAttribute="top" secondItem="HWw-GR-Gbd" secondAttribute="bottom" constant="12" id="p0H-f1-Uck"/>
+                    <constraint firstItem="HWw-GR-Gbd" firstAttribute="top" secondItem="amn-I8-JU4" secondAttribute="bottom" id="qcZ-J7-2DR"/>
+                    <constraint firstItem="amn-I8-JU4" firstAttribute="leading" secondItem="usv-X7-UNB" secondAttribute="leading" constant="16" id="sZc-vO-LPN"/>
+                    <constraint firstItem="PL7-Ij-YT2" firstAttribute="top" secondItem="RHe-Cr-zhD" secondAttribute="bottom" id="vnR-FO-8Sl"/>
+                    <constraint firstAttribute="trailing" secondItem="amn-I8-JU4" secondAttribute="trailing" constant="16" id="wht-pW-yii"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorView" destination="ytj-4T-M70" id="iRm-Ex-vG9"/>
+                <outlet property="descriptionLabel" destination="ugg-Ze-GBq" id="Itc-0b-T1d"/>
+                <outlet property="descriptionTopConstraint" destination="p0H-f1-Uck" id="wEM-zf-lJQ"/>
+                <outlet property="interestView" destination="HWw-GR-Gbd" id="4aR-M7-QMw"/>
+                <outlet property="interestViewHeightConstraint" destination="1so-Sf-gnA" id="HqI-y0-TZb"/>
+                <outlet property="interestViewTopConstraint" destination="qcZ-J7-2DR" id="Agd-S9-rWg"/>
+                <outlet property="likeCommentShareView" destination="RHe-Cr-zhD" id="6Ah-nY-UbM"/>
+                <outlet property="webView" destination="amn-I8-JU4" id="vQf-UE-rgM"/>
+                <outlet property="webViewHeightConstraint" destination="8nu-NV-OsI" id="vfW-vN-FLJ"/>
+            </connections>
+            <point key="canvasLocation" x="-218.5" y="-66"/>
+        </tableViewCell>
+    </objects>
+</document>

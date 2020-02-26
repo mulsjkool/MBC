@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JUk-Bj-kKS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DlK-n9-OuA">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="JUk-Bj-kKS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2ma-EC-RJm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zmp-7t-Bdd" kind="relationship" relationship="rootViewController" id="UgR-6U-DhU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCZ-Hl-46Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1958" y="-66"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="GCg-RB-1fd">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="zmp-7t-Bdd" customClass="LoginViewController" customModule="MBC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aj4-ac-43r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bCS-DT-5u0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZYT-dI-853"/>
+                    <connections>
+                        <segue destination="fyF-lf-b57" kind="show" identifier="login.toSignup" id="ywY-dM-LjK"/>
+                        <segue destination="2VJ-we-dNe" kind="show" identifier="login.toForgotPass" id="wrx-dM-ck3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBO-VD-But" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1062" y="-66"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="tbZ-QE-AN1">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordViewController" id="2VJ-we-dNe" customClass="ForgotPasswordViewController" customModule="MBC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jbW-2A-kLD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qqY-Sq-XJv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GcK-7X-cQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1063" y="739"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="VFr-2Q-HjR">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" id="fyF-lf-b57" customClass="SignupViewController" customModule="MBC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CGE-Xo-hib">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="thT-cV-R5N"/>
+                    </view>
+                    <connections>
+                        <segue destination="GH9-NM-3B1" kind="show" identifier="signup.toVeirifyEmail" id="yZR-6q-IAx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNO-CY-Ssl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="-66"/>
+        </scene>
+        <!--Email Verification View Controller-->
+        <scene sceneID="scX-Wj-2jG">
+            <objects>
+                <viewController id="GH9-NM-3B1" customClass="EmailVerificationViewController" customModule="MBC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mmb-x3-gQ0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="rdS-Pc-co9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2v-eT-R05" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-66"/>
+        </scene>
+    </scenes>
+</document>

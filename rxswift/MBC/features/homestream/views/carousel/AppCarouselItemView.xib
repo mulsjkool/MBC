@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppCarouselItemView" id="XDn-gJ-3aD" customClass="AppCarouselItemView" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="107" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="khQ-ku-v2h">
+                        <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="khQ-ku-v2h" secondAttribute="height" multiplier="1:1" id="Uoj-Ln-YL3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eti-7F-Adz" userLabel="Label - title">
+                        <rect key="frame" x="0.0" y="115" width="107" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="BUU-nv-fKd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="12"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="12"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="14"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IZ-Rr-t5h" userLabel="Label - Type">
+                        <rect key="frame" x="0.0" y="155" width="107" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="irv-9c-Pvo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                        <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="12"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc6-oI-hi9" userLabel="Label - author">
+                        <rect key="frame" x="0.0" y="171" width="107" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="mS7-Hq-ORa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.1960784314" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="12"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATc-g4-0Wh" userLabel="Label - Count">
+                        <rect key="frame" x="0.0" y="190" width="107" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="l8C-4n-v22"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                        <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="12"/>
+                        </variation>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ATc-g4-0Wh" firstAttribute="top" secondItem="yc6-oI-hi9" secondAttribute="bottom" constant="12" id="46l-om-fKm"/>
+                <constraint firstItem="khQ-ku-v2h" firstAttribute="top" secondItem="XDn-gJ-3aD" secondAttribute="top" id="4Tc-2V-XVy"/>
+                <constraint firstItem="khQ-ku-v2h" firstAttribute="width" secondItem="khQ-ku-v2h" secondAttribute="height" multiplier="1:1" id="9iW-sC-aZk"/>
+                <constraint firstAttribute="trailing" secondItem="7IZ-Rr-t5h" secondAttribute="trailing" id="DYP-Gn-vlK"/>
+                <constraint firstAttribute="trailing" secondItem="ATc-g4-0Wh" secondAttribute="trailing" id="DoO-6a-4Y3"/>
+                <constraint firstItem="ATc-g4-0Wh" firstAttribute="leading" secondItem="XDn-gJ-3aD" secondAttribute="leading" id="OY9-Pg-r69"/>
+                <constraint firstItem="7IZ-Rr-t5h" firstAttribute="top" secondItem="Eti-7F-Adz" secondAttribute="bottom" constant="5" id="S2a-mG-yev"/>
+                <constraint firstItem="Eti-7F-Adz" firstAttribute="top" secondItem="khQ-ku-v2h" secondAttribute="bottom" constant="8" id="TOC-I6-thJ"/>
+                <constraint firstItem="khQ-ku-v2h" firstAttribute="leading" secondItem="XDn-gJ-3aD" secondAttribute="leading" id="WNP-5F-Jvm"/>
+                <constraint firstAttribute="trailing" secondItem="yc6-oI-hi9" secondAttribute="trailing" id="XCy-Al-Rtz"/>
+                <constraint firstItem="Eti-7F-Adz" firstAttribute="top" secondItem="khQ-ku-v2h" secondAttribute="bottom" constant="12" id="ZCP-9x-KfD"/>
+                <constraint firstAttribute="trailing" secondItem="khQ-ku-v2h" secondAttribute="trailing" id="dAC-s2-DgJ"/>
+                <constraint firstAttribute="trailing" secondItem="Eti-7F-Adz" secondAttribute="trailing" id="hAJ-LU-diS"/>
+                <constraint firstItem="Eti-7F-Adz" firstAttribute="leading" secondItem="XDn-gJ-3aD" secondAttribute="leading" id="iPP-vR-bMI"/>
+                <constraint firstItem="yc6-oI-hi9" firstAttribute="leading" secondItem="XDn-gJ-3aD" secondAttribute="leading" id="j8S-1J-vj3"/>
+                <constraint firstItem="yc6-oI-hi9" firstAttribute="top" secondItem="7IZ-Rr-t5h" secondAttribute="bottom" constant="2" id="l3P-XD-b0h"/>
+                <constraint firstItem="7IZ-Rr-t5h" firstAttribute="leading" secondItem="XDn-gJ-3aD" secondAttribute="leading" id="sVs-Fx-u4q"/>
+                <constraint firstItem="ATc-g4-0Wh" firstAttribute="top" secondItem="yc6-oI-hi9" secondAttribute="bottom" constant="5" id="u4d-Ap-ei8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="oLr-3m-hH8"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="TOC-I6-thJ"/>
+                    <exclude reference="ZCP-9x-KfD"/>
+                    <exclude reference="46l-om-fKm"/>
+                    <exclude reference="u4d-Ap-ei8"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="TOC-I6-thJ"/>
+                    <include reference="u4d-Ap-ei8"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="ZCP-9x-KfD"/>
+                    <include reference="46l-om-fKm"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="authorLabel" destination="yc6-oI-hi9" id="7mm-oK-GdK"/>
+                <outlet property="countLabel" destination="ATc-g4-0Wh" id="Rj1-eI-JCV"/>
+                <outlet property="imageView" destination="khQ-ku-v2h" id="JsM-tK-kcl"/>
+                <outlet property="titleLabel" destination="Eti-7F-Adz" id="mb0-C4-qT5"/>
+                <outlet property="typeLabel" destination="7IZ-Rr-t5h" id="wqe-tO-Puh"/>
+            </connections>
+            <point key="canvasLocation" x="-1184" y="49"/>
+        </collectionViewCell>
+    </objects>
+</document>

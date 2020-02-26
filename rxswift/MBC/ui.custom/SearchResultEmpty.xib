@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchResultEmpty" customModule="MBC" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="ebP-9y-nra"/>
+                <outlet property="messageNotFoundLabel" destination="2ai-WE-vKO" id="fm5-xW-ucf"/>
+                <outlet property="notFoundLabel" destination="2ta-9c-Brq" id="M9J-oj-2UL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROs-gy-WS5">
+                    <rect key="frame" x="133.5" y="38" width="108" height="17"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ta-9c-Brq">
+                            <rect key="frame" x="60" y="0.0" width="48" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="iHc-wR-Ht5"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="مسلسل">
+                                    <attributes>
+                                        <font key="NSFont" size="14" name="29LTKaff-Regular"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1r-hy-7Ee">
+                            <rect key="frame" x="0.0" y="0.0" width="58" height="17"/>
+                            <attributedString key="attributedText">
+                                <fragment content="هل تعني؟">
+                                    <attributes>
+                                        <color key="NSColor" red="0.47157537937164307" green="0.56422722339630127" blue="0.61032837629318237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="14" name="29LTKaff-Regular"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2ta-9c-Brq" secondAttribute="trailing" id="3jt-Zj-fth"/>
+                        <constraint firstAttribute="bottom" secondItem="2ta-9c-Brq" secondAttribute="bottom" id="QBX-xq-ayV"/>
+                        <constraint firstItem="2ta-9c-Brq" firstAttribute="leading" secondItem="p1r-hy-7Ee" secondAttribute="trailing" constant="2" id="Tzq-CW-64N"/>
+                        <constraint firstItem="p1r-hy-7Ee" firstAttribute="top" secondItem="ROs-gy-WS5" secondAttribute="top" id="ZGJ-we-Gt2"/>
+                        <constraint firstItem="p1r-hy-7Ee" firstAttribute="leading" secondItem="ROs-gy-WS5" secondAttribute="leading" id="loq-FG-UQc"/>
+                        <constraint firstAttribute="bottom" secondItem="p1r-hy-7Ee" secondAttribute="bottom" id="v9a-jC-PvE"/>
+                        <constraint firstItem="2ta-9c-Brq" firstAttribute="top" secondItem="ROs-gy-WS5" secondAttribute="top" id="yzB-MG-Z7i"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gba-pa-Jz5">
+                    <rect key="frame" x="193.5" y="56" width="48" height="2"/>
+                    <color key="backgroundColor" red="0.93902403116226196" green="0.32387137413024902" blue="0.3127216100692749" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Pjq-t8-jwW"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWQ-QP-6Be">
+                    <rect key="frame" x="84" y="75" width="208" height="17"/>
+                    <attributedString key="attributedText">
+                        <fragment content="الآخبار (0)، الصور (0)، الفيديوهات (0) ">
+                            <attributes>
+                                <color key="NSColor" red="0.42882746458053589" green="0.5093575119972229" blue="0.55124861001968384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name="29LTKaff-Regular"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نعتذر! لا يوجد نتائج في هذا البحث ملسلل" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ai-WE-vKO">
+                    <rect key="frame" x="48.5" y="110" width="278" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="278" id="Di5-R7-q2z"/>
+                        <constraint firstAttribute="height" constant="70" id="Lla-tu-0hZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="24"/>
+                    <color key="textColor" red="0.46751809120178223" green="0.56423985958099365" blue="0.61036181449890137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.searchresult.empty" translatesAutoresizingMaskIntoConstraints="NO" id="yvK-Rj-eRQ">
+                    <rect key="frame" x="108" y="214" width="159" height="191"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="191" id="NCc-zR-M1g"/>
+                        <constraint firstAttribute="width" constant="159" id="jiS-jA-MLc"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2ai-WE-vKO" firstAttribute="top" secondItem="zWQ-QP-6Be" secondAttribute="bottom" constant="18" id="42G-vf-87J"/>
+                <constraint firstItem="gba-pa-Jz5" firstAttribute="leading" secondItem="2ta-9c-Brq" secondAttribute="leading" id="4Rt-Rz-sXQ"/>
+                <constraint firstItem="ROs-gy-WS5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Cq5-rr-cGU"/>
+                <constraint firstItem="yvK-Rj-eRQ" firstAttribute="top" secondItem="2ai-WE-vKO" secondAttribute="bottom" constant="34" id="Nfh-1J-QXj"/>
+                <constraint firstItem="zWQ-QP-6Be" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bQ8-G7-481"/>
+                <constraint firstItem="zWQ-QP-6Be" firstAttribute="top" secondItem="ROs-gy-WS5" secondAttribute="bottom" constant="20" id="gBp-6A-QoW"/>
+                <constraint firstItem="ROs-gy-WS5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="18" id="jM4-CN-Q2L"/>
+                <constraint firstItem="gba-pa-Jz5" firstAttribute="width" secondItem="2ta-9c-Brq" secondAttribute="width" id="jjw-sq-TtW"/>
+                <constraint firstItem="gba-pa-Jz5" firstAttribute="top" secondItem="ROs-gy-WS5" secondAttribute="bottom" constant="1" id="liP-8a-ePa"/>
+                <constraint firstItem="yvK-Rj-eRQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="m6n-OW-4Ia"/>
+                <constraint firstItem="2ai-WE-vKO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qNA-uc-gjo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon.searchresult.empty" width="159" height="191"/>
+    </resources>
+</document>

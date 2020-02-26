@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistSearchResultCell" rowHeight="261" id="KGk-i7-Jjw" customClass="PlaylistSearchResultCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="261"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="260.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDM-pO-IQU">
+                        <rect key="frame" x="16" y="16" width="250" height="140.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dDM-pO-IQU" secondAttribute="height" multiplier="16:9" id="Ih2-31-yuv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1z-6x-awG" userLabel="Label - title">
+                        <rect key="frame" x="16" y="164.5" width="250" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="srI-Li-nPn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="12"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.1960784314" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkZ-tS-3xL">
+                        <rect key="frame" x="214" y="116.5" width="36" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ww-1u-t6E" userLabel="Count Label">
+                                <rect key="frame" x="28" y="0.0" width="0.0" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Jar-5d-hh6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.playlist" translatesAutoresizingMaskIntoConstraints="NO" id="Smz-lC-Dhw">
+                                <rect key="frame" x="8" y="6" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="TaP-LC-y3a"/>
+                                    <constraint firstAttribute="height" constant="12" id="YFE-Ta-ca1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Smz-lC-Dhw" firstAttribute="centerY" secondItem="bkZ-tS-3xL" secondAttribute="centerY" id="6dC-eZ-jwP"/>
+                            <constraint firstItem="7ww-1u-t6E" firstAttribute="centerY" secondItem="bkZ-tS-3xL" secondAttribute="centerY" id="9wQ-4e-Poh"/>
+                            <constraint firstItem="7ww-1u-t6E" firstAttribute="top" secondItem="bkZ-tS-3xL" secondAttribute="top" id="EI2-VS-fNL"/>
+                            <constraint firstAttribute="bottom" secondItem="7ww-1u-t6E" secondAttribute="bottom" id="EPi-2i-Gqb"/>
+                            <constraint firstItem="Smz-lC-Dhw" firstAttribute="leading" secondItem="bkZ-tS-3xL" secondAttribute="leading" constant="8" id="MqG-ue-VVt"/>
+                            <constraint firstAttribute="trailing" secondItem="7ww-1u-t6E" secondAttribute="trailing" constant="8" id="Qu6-aA-rNN"/>
+                            <constraint firstItem="7ww-1u-t6E" firstAttribute="leading" secondItem="Smz-lC-Dhw" secondAttribute="trailing" constant="8" id="TiK-hH-aXQ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iw-GG-OSd" userLabel="Like Comment Count Label">
+                        <rect key="frame" x="16" y="203" width="250" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="CWF-wI-LwC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                        <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4iw-GG-OSd" firstAttribute="leading" secondItem="dDM-pO-IQU" secondAttribute="leading" id="4jy-Ih-xCw"/>
+                    <constraint firstItem="4iw-GG-OSd" firstAttribute="top" secondItem="f1z-6x-awG" secondAttribute="bottom" constant="8" id="Aol-Um-vlE"/>
+                    <constraint firstItem="4iw-GG-OSd" firstAttribute="trailing" secondItem="dDM-pO-IQU" secondAttribute="trailing" id="BhL-wh-TE3"/>
+                    <constraint firstItem="f1z-6x-awG" firstAttribute="top" secondItem="dDM-pO-IQU" secondAttribute="bottom" constant="8" id="HF2-hO-gkH"/>
+                    <constraint firstItem="bkZ-tS-3xL" firstAttribute="top" secondItem="dDM-pO-IQU" secondAttribute="bottom" constant="-40" id="Isa-gL-D0i"/>
+                    <constraint firstItem="dDM-pO-IQU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="S9i-hZ-NvC"/>
+                    <constraint firstItem="f1z-6x-awG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Zq3-WR-V0n"/>
+                    <constraint firstItem="f1z-6x-awG" firstAttribute="trailing" secondItem="dDM-pO-IQU" secondAttribute="trailing" id="b1O-zJ-hsQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bkZ-tS-3xL" secondAttribute="trailing" constant="16" id="bIX-ZC-95u"/>
+                    <constraint firstItem="dDM-pO-IQU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dAW-xs-kvj"/>
+                    <constraint firstAttribute="trailing" secondItem="dDM-pO-IQU" secondAttribute="trailing" constant="16" id="hMf-sp-Col"/>
+                    <constraint firstItem="f1z-6x-awG" firstAttribute="leading" secondItem="dDM-pO-IQU" secondAttribute="leading" id="tVi-23-F9I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countLabel" destination="7ww-1u-t6E" id="Nq0-2E-Rxm"/>
+                <outlet property="likeCommentCountLabel" destination="4iw-GG-OSd" id="AUF-y7-Lwe"/>
+                <outlet property="thumbnailImageView" destination="dDM-pO-IQU" id="i71-cn-sdY"/>
+                <outlet property="titleLabel" destination="f1z-6x-awG" id="pZs-v4-PoO"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="162.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon.playlist" width="16" height="16"/>
+    </resources>
+</document>

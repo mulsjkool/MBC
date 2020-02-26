@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>websiteBaseURL</key>
+	<string>https://qc-fo-app.v2.mymbc.net</string>
+	<key>environment</key>
+	<string>test</string>
+	<key>likeDelay</key>
+	<integer>3</integer>
+	<key>defaultPageSize</key>
+	<integer>5</integer>
+	<key>apiBaseUrl</key>
+	<string>https://qc-api.v2.mymbc.net</string>
+	<key>cacheExpiredTime</key>
+	<integer>60</integer>
+	<key>apiImageUrl</key>
+	<string>https://res.cloudinary.com/mbc-net/image/upload/</string>
+	<key>apiImageVersion</key>
+	<string>v1512965883</string>
+	<key>naxtAlbumLoadingTime</key>
+	<integer>3</integer>
+	<key>damId</key>
+	<string>xgkatmolcq8a0j9ijh2e</string>
+	<key>gigyaApiKey</key>
+	<string>3_5x7uLs0R9NIn7pWz_56ZSNEAv7bpieNEOMUkoU4Glmdj1V4he8rYhDcKCpZEIFGY</string>
+	<key>hideVideoControls</key>
+	<integer>3</integer>
+	<key>scheduleLocalNotificationTime</key>
+	<integer>30</integer>
+	<key>defaultChannelListPageSize</key>
+	<integer>10</integer>
+	<key>intervalTimeSlot</key>
+	<integer>1800</integer>
+	<key>langugeConfigCacheExpiredTime</key>
+	<integer>2592000</integer>
+	<key>adsTimeOffset</key>
+	<integer>15</integer>
+	<key>minRemainTimeShowAds</key>
+	<integer>20</integer>
+</dict>
+</plist>

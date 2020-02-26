@@ -1,0 +1,26 @@
+.theo-pip-ios-sdk.theoplayer-skin, .theo-pip-ios-sdk.theoplayer-skin.vjs-fullscreen {
+    font-size: 1.5em;
+}
+.theo-pip-ios-sdk.vjs-has-started.theoplayer-skin.theo-seekbar-above-controls .vjs-control-bar:before {
+    height: 3em;
+}
+.theo-pip-ios-sdk.vjs-has-started.theoplayer-skin .vjs-control,
+.theo-pip-ios-sdk.vjs-has-started.theoplayer-skin .vjs-time-divider,
+.theo-pip-ios-sdk.vjs-has-started.theoplayer-skin .vjs-icon-picture-in-picture {
+    display: none;
+}
+.theo-pip-ios-sdk.vjs-has-started.theoplayer-skin .vjs-play-control,
+.theo-pip-ios-sdk.vjs-has-started.theoplayer-skin .theo-ios-sdk-pip-fullscreen,
+.theo-pip-ios-sdk.vjs-has-started.theoplayer-skin .theo-pip-close {
+    display: block;
+}
+.theoplayer-skin .theo-controlbar-button.theo-ios-sdk-pip-fullscreen {
+	display: none;
+}
+.theoplayer-skin.theo-mobile.video-js .vjs-icon-picture-in-picture-enter.vjs-control:before {
+    font-size: 1.7em;
+    line-height: 1.73em;
+}
+.theo-pip-ios-sdk.video-js.vjs-fullscreen .vjs-fullscreen-control:before {
+	content: "\f108";
+}

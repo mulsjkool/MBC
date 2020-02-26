@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IPadVideoPlaylistViewController" customModule="MBC" customModuleProvider="target">
+            <connections>
+                <outlet property="contentTableView" destination="ZpC-Bo-MON" id="o9q-SQ-CI3"/>
+                <outlet property="listVideoTableView" destination="Kvk-UK-5j1" id="3hA-af-LTb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kvk-UK-5j1">
+                    <rect key="frame" x="710" y="0.0" width="314" height="768"/>
+                    <color key="backgroundColor" red="0.9390240312" green="0.3238713741" blue="0.31272161009999999" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbC-f7-igH">
+                    <rect key="frame" x="0.0" y="0.0" width="710" height="768"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Plh-or-8qX">
+                            <rect key="frame" x="0.0" y="0.0" width="710" height="399.5"/>
+                            <color key="backgroundColor" red="0.29016065600000002" green="0.29021644590000001" blue="0.29015710950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Plh-or-8qX" secondAttribute="height" multiplier="16:9" id="c4S-pR-ITp"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZpC-Bo-MON">
+                            <rect key="frame" x="0.0" y="399.5" width="710" height="368.5"/>
+                            <color key="backgroundColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Plh-or-8qX" firstAttribute="top" secondItem="xbC-f7-igH" secondAttribute="top" id="5No-nB-fLC"/>
+                        <constraint firstItem="ZpC-Bo-MON" firstAttribute="leading" secondItem="xbC-f7-igH" secondAttribute="leading" id="7Os-8P-NJ7"/>
+                        <constraint firstItem="ZpC-Bo-MON" firstAttribute="top" secondItem="Plh-or-8qX" secondAttribute="bottom" id="Chc-Hv-aLA"/>
+                        <constraint firstAttribute="bottom" secondItem="ZpC-Bo-MON" secondAttribute="bottom" id="FRo-vi-Gcj"/>
+                        <constraint firstAttribute="trailing" secondItem="ZpC-Bo-MON" secondAttribute="trailing" id="Hil-Fi-HQB"/>
+                        <constraint firstItem="Plh-or-8qX" firstAttribute="leading" secondItem="xbC-f7-igH" secondAttribute="leading" id="Ock-cm-SMV"/>
+                        <constraint firstAttribute="trailing" secondItem="Plh-or-8qX" secondAttribute="trailing" id="bOF-Nf-sbf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kvk-UK-5j1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6dH-Vp-DMq"/>
+                <constraint firstItem="xbC-f7-igH" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="710:1024" id="72T-Mc-3xk"/>
+                <constraint firstItem="Kvk-UK-5j1" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="H5a-qZ-Npb"/>
+                <constraint firstItem="xbC-f7-igH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RSX-N1-EAb"/>
+                <constraint firstItem="xbC-f7-igH" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="UO3-0M-r1g"/>
+                <constraint firstItem="Kvk-UK-5j1" firstAttribute="leading" secondItem="xbC-f7-igH" secondAttribute="trailing" id="aGW-d6-tRI"/>
+                <constraint firstItem="Kvk-UK-5j1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lkO-nD-7CR"/>
+                <constraint firstItem="xbC-f7-igH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rrz-ve-3xE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

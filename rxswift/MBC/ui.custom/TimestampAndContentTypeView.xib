@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimestampAndContentTypeView" customModule="MBC" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="kvq-Io-0fK"/>
+                <outlet property="contentSubTypeLabel" destination="uM3-Q0-9Fv" id="lpC-zl-rlp"/>
+                <outlet property="contentTypeLabel" destination="fk6-AF-CFz" id="8mU-S6-xTK"/>
+                <outlet property="seperatorContentSubType" destination="QYG-or-qJe" id="urP-Fd-Soz"/>
+                <outlet property="seperatorContentType" destination="m1U-3x-Rsf" id="n1o-LM-hq7"/>
+                <outlet property="timestampLabel" destination="B5w-Fl-ef3" id="joP-lZ-tSW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="14"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5w-Fl-ef3">
+                    <rect key="frame" x="0.0" y="0.0" width="3" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="W9J-IR-pMK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                    <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1U-3x-Rsf">
+                    <rect key="frame" x="3" y="0.0" width="9.5" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="Nxq-IZ-ipg"/>
+                        <constraint firstAttribute="height" constant="14" id="R16-Xk-wac"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                    <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fk6-AF-CFz">
+                    <rect key="frame" x="12.5" y="0.0" width="0.0" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="hxK-X6-hAe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                    <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYG-or-qJe">
+                    <rect key="frame" x="12.5" y="0.0" width="9.5" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="1QE-e8-3wb"/>
+                        <constraint firstAttribute="width" constant="9.5" id="jfo-J0-nAN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                    <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uM3-Q0-9Fv">
+                    <rect key="frame" x="22" y="0.0" width="0.0" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="9PA-2z-lRE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                    <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QYG-or-qJe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8rp-DE-Yvc"/>
+                <constraint firstItem="QYG-or-qJe" firstAttribute="leading" secondItem="fk6-AF-CFz" secondAttribute="trailing" id="Cts-Cm-2Vr"/>
+                <constraint firstItem="uM3-Q0-9Fv" firstAttribute="leading" secondItem="QYG-or-qJe" secondAttribute="trailing" id="FH6-z9-H6L"/>
+                <constraint firstItem="uM3-Q0-9Fv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Q5Y-41-f1T"/>
+                <constraint firstItem="B5w-Fl-ef3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qjz-BA-ISe"/>
+                <constraint firstItem="fk6-AF-CFz" firstAttribute="leading" secondItem="m1U-3x-Rsf" secondAttribute="trailing" id="gle-da-ZgO"/>
+                <constraint firstItem="m1U-3x-Rsf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ppP-Mr-mwP"/>
+                <constraint firstItem="m1U-3x-Rsf" firstAttribute="leading" secondItem="B5w-Fl-ef3" secondAttribute="trailing" id="s7U-0L-VQj"/>
+                <constraint firstItem="B5w-Fl-ef3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tIb-er-arJ"/>
+                <constraint firstItem="fk6-AF-CFz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="zWl-u2-4Re"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

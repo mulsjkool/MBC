@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmbeddedCardCell" rowHeight="393" id="uv5-IR-iBh" customClass="EmbeddedCardCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="391"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uv5-IR-iBh" id="3KN-pI-O5G">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="391"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8h-wz-OuQ" customClass="ActivityCardView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="Lxt-NZ-igO"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ws-Da-1UP" userLabel="Author View" customClass="AvatarFullScreenView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="80" id="CIU-Ti-eSO"/>
+                        </constraints>
+                    </view>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1c-Ua-hqK" customClass="EmbeddedWebView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="16" y="80" width="343" height="192"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.93725490196078431" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="192" id="3km-q9-N9C"/>
+                        </constraints>
+                    </webView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpu-fh-1It" customClass="InterestView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="288" width="375" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="cZV-7K-l5c"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-do-CIV" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="16" y="320" width="343" height="0.0"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="12"/>
+                        <color key="textColor" red="0.37647058823529411" green="0.49019607843137253" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="copyableAction" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xq4-GD-R8I" userLabel="LikeShareComment View" customClass="LikeCommentShareView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="326" width="375" height="48"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="V5w-ub-JC6"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysp-oI-Aat">
+                        <rect key="frame" x="0.0" y="374" width="375" height="16.5"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="16" id="rmh-MS-UZY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="r8h-wz-OuQ" secondAttribute="trailing" id="2E0-AD-VBA"/>
+                    <constraint firstItem="a1c-Ua-hqK" firstAttribute="top" secondItem="5Ws-Da-1UP" secondAttribute="bottom" id="51R-Qk-kj9"/>
+                    <constraint firstItem="fpu-fh-1It" firstAttribute="top" secondItem="a1c-Ua-hqK" secondAttribute="bottom" constant="16" id="5dG-SI-KM0"/>
+                    <constraint firstItem="kNY-do-CIV" firstAttribute="leading" secondItem="3KN-pI-O5G" secondAttribute="leading" constant="16" id="9Yz-Tf-lhq"/>
+                    <constraint firstItem="Xq4-GD-R8I" firstAttribute="leading" secondItem="3KN-pI-O5G" secondAttribute="leading" id="9uw-cc-GZs"/>
+                    <constraint firstAttribute="trailing" secondItem="5Ws-Da-1UP" secondAttribute="trailing" id="E5f-ah-GcF"/>
+                    <constraint firstItem="r8h-wz-OuQ" firstAttribute="leading" secondItem="3KN-pI-O5G" secondAttribute="leading" id="MiB-tV-TaL"/>
+                    <constraint firstAttribute="trailing" secondItem="a1c-Ua-hqK" secondAttribute="trailing" constant="16" id="N4a-Ql-AWc"/>
+                    <constraint firstItem="Xq4-GD-R8I" firstAttribute="top" secondItem="kNY-do-CIV" secondAttribute="bottom" constant="6" id="NPB-49-Dq0"/>
+                    <constraint firstAttribute="trailing" secondItem="Xq4-GD-R8I" secondAttribute="trailing" id="PvE-07-5At"/>
+                    <constraint firstAttribute="bottom" secondItem="ysp-oI-Aat" secondAttribute="bottom" id="abc-wC-KQl"/>
+                    <constraint firstItem="5Ws-Da-1UP" firstAttribute="top" secondItem="r8h-wz-OuQ" secondAttribute="bottom" id="bGq-1c-30o"/>
+                    <constraint firstItem="5Ws-Da-1UP" firstAttribute="leading" secondItem="3KN-pI-O5G" secondAttribute="leading" id="cQI-Kk-jta"/>
+                    <constraint firstItem="kNY-do-CIV" firstAttribute="top" secondItem="fpu-fh-1It" secondAttribute="bottom" constant="12" id="eMz-kx-Stt"/>
+                    <constraint firstItem="fpu-fh-1It" firstAttribute="leading" secondItem="3KN-pI-O5G" secondAttribute="leading" id="ls4-jy-xcI"/>
+                    <constraint firstItem="ysp-oI-Aat" firstAttribute="top" secondItem="Xq4-GD-R8I" secondAttribute="bottom" id="nPX-4q-dxw"/>
+                    <constraint firstAttribute="trailing" secondItem="fpu-fh-1It" secondAttribute="trailing" id="nfA-fE-z0f"/>
+                    <constraint firstItem="r8h-wz-OuQ" firstAttribute="top" secondItem="3KN-pI-O5G" secondAttribute="top" id="nub-tW-oxC"/>
+                    <constraint firstItem="a1c-Ua-hqK" firstAttribute="leading" secondItem="3KN-pI-O5G" secondAttribute="leading" constant="16" id="oUl-NW-ZjQ"/>
+                    <constraint firstAttribute="trailing" secondItem="kNY-do-CIV" secondAttribute="trailing" constant="16" id="rKb-tz-O7j"/>
+                    <constraint firstItem="ysp-oI-Aat" firstAttribute="leading" secondItem="3KN-pI-O5G" secondAttribute="leading" id="wrN-Jp-tKu"/>
+                    <constraint firstAttribute="trailing" secondItem="ysp-oI-Aat" secondAttribute="trailing" id="yEy-B6-Tcb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityCardView" destination="r8h-wz-OuQ" id="Y9l-HX-F0r"/>
+                <outlet property="activityCardViewHeightConstraint" destination="Lxt-NZ-igO" id="OfE-lY-7gs"/>
+                <outlet property="authorView" destination="5Ws-Da-1UP" id="ZHK-8c-ovH"/>
+                <outlet property="descriptionLabelTopConstraint" destination="eMz-kx-Stt" id="CVi-jd-zK0"/>
+                <outlet property="interestView" destination="fpu-fh-1It" id="mzp-P4-Nl0"/>
+                <outlet property="interestViewHeightConstraint" destination="cZV-7K-l5c" id="0y1-t4-Kvw"/>
+                <outlet property="interestViewTopConstraint" destination="5dG-SI-KM0" id="UCw-rD-15Y"/>
+                <outlet property="lbDescription" destination="kNY-do-CIV" id="CwR-ha-DJ6"/>
+                <outlet property="viewLikeCommentShare" destination="Xq4-GD-R8I" id="epi-r4-ah9"/>
+                <outlet property="webView" destination="a1c-Ua-hqK" id="cj3-iP-I96"/>
+                <outlet property="webViewHeightConstraint" destination="3km-q9-N9C" id="Aim-s0-0BT"/>
+            </connections>
+            <point key="canvasLocation" x="-394" y="-247"/>
+        </tableViewCell>
+    </objects>
+</document>

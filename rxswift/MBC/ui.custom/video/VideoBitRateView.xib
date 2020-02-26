@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoBitRateView" customModule="MBC" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="o0J-Zg-hfv" id="UgH-1U-9SE"/>
+                <outlet property="collectionViewWidthContraint" destination="Y0N-hp-4IO" id="eAd-QP-mNT"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="jxv-Wj-E8T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="617" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-uZ-2Ln">
+                    <rect key="frame" x="0.0" y="0.0" width="617" height="20"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="o0J-Zg-hfv">
+                            <rect key="frame" x="0.0" y="3" width="617" height="14"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="617" id="Y0N-hp-4IO"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T5S-LS-kW4">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="mTq-gW-0oz"/>
+                                <outlet property="delegate" destination="-1" id="Fas-bR-dah"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="o0J-Zg-hfv" firstAttribute="leading" secondItem="Qtc-uZ-2Ln" secondAttribute="leading" id="qO4-iB-K5H"/>
+                        <constraint firstAttribute="bottom" secondItem="o0J-Zg-hfv" secondAttribute="bottom" constant="3" id="qgU-BJ-nZ9"/>
+                        <constraint firstItem="o0J-Zg-hfv" firstAttribute="top" secondItem="Qtc-uZ-2Ln" secondAttribute="top" constant="3" id="vkg-Y6-P2O"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qtc-uZ-2Ln" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0Ko-At-LEx"/>
+                <constraint firstItem="Qtc-uZ-2Ln" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tcz-Iu-ld1"/>
+                <constraint firstAttribute="trailing" secondItem="Qtc-uZ-2Ln" secondAttribute="trailing" id="kku-jn-elC"/>
+                <constraint firstAttribute="bottom" secondItem="Qtc-uZ-2Ln" secondAttribute="bottom" id="uLF-rq-J5b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="10.5" y="189"/>
+        </view>
+    </objects>
+</document>

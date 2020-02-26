@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BundleSingleItemCell" id="ITc-1d-C0G" customClass="BundleSingleItemCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="572"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ITc-1d-C0G" id="DrN-61-UfN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="571.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Dqt-P0-mNk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="555.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Dqt-P0-mNk" secondAttribute="height" multiplier="27/40" id="dRO-Yi-QJa"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LqG-9M-U67">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="ITc-1d-C0G" id="8ft-1J-ncR"/>
+                            <outlet property="delegate" destination="ITc-1d-C0G" id="NaI-zd-8QH"/>
+                        </connections>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvp-CI-hfp" userLabel="View - seperator">
+                        <rect key="frame" x="0.0" y="555.5" width="375" height="16"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="k26-85-48Q"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb8-JP-JUg">
+                        <rect key="frame" x="0.0" y="262" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="CJ9-68-siv"/>
+                            <constraint firstAttribute="width" secondItem="hb8-JP-JUg" secondAttribute="height" id="W6i-RA-5Hq"/>
+                        </constraints>
+                        <state key="normal" image="icon.bundle.arrowRight"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3V-uA-6N2">
+                        <rect key="frame" x="343" y="262" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="I3V-uA-6N2" secondAttribute="height" id="aXe-Bx-Ohg"/>
+                            <constraint firstAttribute="width" constant="32" id="nl3-nE-9MU"/>
+                        </constraints>
+                        <state key="normal" image="icon.bundle.arrowLeft"/>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fQT-uQ-nNu">
+                        <rect key="frame" x="0.0" y="433.5" width="375" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Cf7-8c-ldA"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fjU-zA-u9S">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="ITc-1d-C0G" id="9fa-Pw-sKx"/>
+                            <outlet property="delegate" destination="ITc-1d-C0G" id="4jM-1E-pNs"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uvp-CI-hfp" firstAttribute="top" secondItem="fQT-uQ-nNu" secondAttribute="bottom" constant="62" id="0aX-Yk-HOB"/>
+                    <constraint firstAttribute="trailing" secondItem="fQT-uQ-nNu" secondAttribute="trailing" id="6rC-uF-cov"/>
+                    <constraint firstAttribute="bottom" secondItem="uvp-CI-hfp" secondAttribute="bottom" id="8EQ-Cz-GbQ"/>
+                    <constraint firstItem="I3V-uA-6N2" firstAttribute="centerY" secondItem="hb8-JP-JUg" secondAttribute="centerY" id="9PA-Gi-NEE"/>
+                    <constraint firstAttribute="trailing" secondItem="I3V-uA-6N2" secondAttribute="trailing" id="ANT-2B-W1H"/>
+                    <constraint firstItem="uvp-CI-hfp" firstAttribute="leading" secondItem="DrN-61-UfN" secondAttribute="leading" id="apS-f1-E9i"/>
+                    <constraint firstItem="uvp-CI-hfp" firstAttribute="top" secondItem="Dqt-P0-mNk" secondAttribute="bottom" id="dsi-jw-8N7"/>
+                    <constraint firstAttribute="trailing" secondItem="uvp-CI-hfp" secondAttribute="trailing" id="f5O-cP-rGR"/>
+                    <constraint firstItem="Dqt-P0-mNk" firstAttribute="top" secondItem="DrN-61-UfN" secondAttribute="top" id="h6d-5V-JtW"/>
+                    <constraint firstItem="hb8-JP-JUg" firstAttribute="centerY" secondItem="Dqt-P0-mNk" secondAttribute="centerY" id="nFK-DB-kGk"/>
+                    <constraint firstItem="fQT-uQ-nNu" firstAttribute="leading" secondItem="DrN-61-UfN" secondAttribute="leading" id="uHx-lB-t1q"/>
+                    <constraint firstItem="hb8-JP-JUg" firstAttribute="leading" secondItem="DrN-61-UfN" secondAttribute="leading" id="vRv-lt-Uc4"/>
+                    <constraint firstItem="Dqt-P0-mNk" firstAttribute="leading" secondItem="DrN-61-UfN" secondAttribute="leading" id="wHW-UE-8Js"/>
+                    <constraint firstAttribute="trailing" secondItem="Dqt-P0-mNk" secondAttribute="trailing" id="y0J-r3-sDb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="carouselCollectionView" destination="fQT-uQ-nNu" id="3KQ-mt-cM2"/>
+                <outlet property="collectionView" destination="Dqt-P0-mNk" id="EK8-Ow-AxG"/>
+                <outlet property="leftButton" destination="I3V-uA-6N2" id="8Oh-Xn-9vt"/>
+                <outlet property="rightButton" destination="hb8-JP-JUg" id="rp6-Lx-KhY"/>
+            </connections>
+            <point key="canvasLocation" x="-120.5" y="-143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon.bundle.arrowLeft" width="7" height="12"/>
+        <image name="icon.bundle.arrowRight" width="7" height="12"/>
+    </resources>
+</document>

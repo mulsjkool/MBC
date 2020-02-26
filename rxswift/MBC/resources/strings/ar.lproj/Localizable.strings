@@ -1,0 +1,646 @@
+/*
+  Localizable.strings
+  MBC
+
+  Created by Khang Nguyen Nhat on 11/30/17.
+  Copyright © 2017 MBC. All rights reserved.
+*/
+
+/*common*/
+"common.buttonText.ok" = "OK";
+"common.buttonText.yes" = "Yes";
+"common.buttonText.cancel" = "Cancel";
+"common.buttonText.resendEmail" = "Resend email";
+"common.alertTitle.warning" = "Warning";
+"common.alertTitle.message" = "Message";
+"common.alertMessage.notSupported" = "Not supported";
+"common.searchBar.placeholder" = "بحث";
+"common.searchBar.searchMode.placeholder" = "ابحث في الاقلام، المسلسلات، البرامج والمشاهير";
+"common.searchBar.cancel" = "إلغاء";
+"common.label.image" = "صور";
+"common.label.image.defaultTitle" = "صور %@";
+"common.label.albums" = "البومات";
+"common.label.album" = "صور";
+"common.button.follow" = "متابعة";
+"common.photos.titleCount" = "%@ صور" ;
+"common.card.link.readMore" = " المزيد ";
+"common.avatar.status" = "تعديل";
+"common.email.placeHolder" = "أدخل البريد الإلكتروني";
+"common.password.placeHolder" = "أدخل كلمة السر";
+"common.label.videoplaylist" = "قوائم الفيديوهات";
+"common.video.titleCount" = "%@ فيديو";
+"common.video.nextItem" = "التالي";
+"common.video.related" = "مقترحات";
+"common.video.menuContent" = "قائمة المحتوى";
+"common.button.male" = "ذكر";
+"common.button.female" = "أنثى";
+"common.button.send" = "ارسل";
+
+"common.marriedStatus.single" = "أعزب";
+"common.marriedStatus.married" = "متزوج";
+"common.marriedStatus.divorce" = "مطلق";
+"common.marriedStatus.widow" = "أرمل";
+
+"common.photoNumbers" = "%@ صور";
+"common.nextAlbumTitle" = "الالبوم التالي";
+"common.photoAndCamera.title" = "Select a option from action sheet";
+"common.photoAndCamera.camera" = "Open camera";
+"common.photoAndCamera.photoAlbum" = "Open photo album";
+
+"common.shareText.format2params" = "%@\n%@";
+"common.shareText.format3params" = "%@\n%@\n%@";
+"common.comingSoon" = "Coming soon.";
+
+"common.and" = "و";
+"common.every" = "كل %@ %@";
+"common.fromTo" = "%@ من %@ الى %@";
+"common.daily" = "يوميا %@";
+"common.today" = "اليوم %@";
+"common.tonight" = "الليلة %@";
+"common.tomorrow" = "غدا %@";
+"common.now" = "يعرض الان";
+
+/*Common Error*/
+"error.dataNotAvailable" = "Data is not available!";
+"error.noInternetConnection" = "No connection. Please try again later";
+"error.serverError" = "Sorry, the system could not process this action at the moment. Please try again later.";
+"error.unknownError" = "Unknown error.";
+"error.fieldIsRequired" = "This field is required.";
+"error.email.formatIncorrect" = "Invalid Email Format.";
+"error.password.formatIncorrect" = "Your password must be 8 characters and contain at least letters and numbers.";
+"error.passwordsNotMatch" = "Password does not match.";
+"error.acceptTermsRequired" = "You must accept terms and conditions.";
+"error.passwordWrongManyTimes" = "Input password wrong many times, please reset your password.";
+"error.sentEmailOK" = "Message sent successfully";
+"error.phoneNumber.formatIncorrect" = "Your phone number is max 20 characters and can contain \"+,;*#( )\"";
+
+/*API Error*/
+"error.emailNotVerified" = "Your email is still not verified, please check your email and done for verification. Or you can click on the button \"Resend email\" to get another verification email.";
+"error.invalidLoginID" = "Either your email or password is wrong, please check.";
+"error.oldPasswordUsed" = "Seems you are entering the old password, thanks to use the updated new one. If you don't remember your new password, thanks to use \"Forgot Password\" button.";
+"error.accountPendingVerification" = "Your account is still not verified, please check your email and done for verification. Or you can click on the button \"Resend email\" to get another verification email.";
+"error.accountDisabled " = "Your account is temporary disable, please contact <MBC Email> to guide how to activate your account.";
+"error.accountIsBlocked" = "Your account is temporary blocked by admin, please contact <MBC Email> to guide how to unblock your account.";
+"error.emailHasExisted" = "The inputted email has existed in system. Please try with another one.";
+"error.loginIDDoesNotExist" = "There is no user with that username or email";
+"error.registrationFail" = "There was a problem in the registration process. Please try again later.";
+"error.registerSuccess" = "This account has been activated. Please re-open your application and try to login.";
+"error.permissionDenied" = "System under construction, please try again later.";
+"error.networkError" = "Please check network connection.";
+"error.invalidRequestSignature" = "Invalid request signature";
+"error.loginIdentifierExists" = "The inputted email has existed in system. Please try with another one.";
+"error.invalidParameterValue" = "Invalid parameter value.";
+"error.wrongOldPassword" = "Old password is wrong.";
+"error.newPassIsTheSameWithOldPass" = "The new password can't be the same as the old password.";
+"error.sharingFailed" = "Sharing has failed.";
+"error.requestHasExpired" = "Request has expired.";
+"error.sendComment" = "Error sending comment.";
+
+/* Month of birth */
+"monthOfBirth.Jan" = "يناير";
+"monthOfBirth.Feb" = "فبراير";
+"monthOfBirth.Mar" = "مارس";
+"monthOfBirth.Apr" = "أبريل";
+"monthOfBirth.May" = "مايو";
+"monthOfBirth.Jun" = "يونيو";
+"monthOfBirth.Jul" = "يوليو";
+"monthOfBirth.Aug" = "أغسطس";
+"monthOfBirth.Sep" = "سبتمبر";
+"monthOfBirth.Oct" = "أكتوبر";
+"monthOfBirth.Nov" = "نوفمبر";
+"monthOfBirth.Dec" = "ديسمبر";
+
+/* Day of week */
+"dayOfWeek.Mon" = "الاثنين";
+"dayOfWeek.Tue" = "الثلاثاء";
+"dayOfWeek.Wed" = "الاربعاء";
+"dayOfWeek.Thu" = "الخميس";
+"dayOfWeek.Fri" = "الجمعة";
+"dayOfWeek.Sat" = "السبت";
+"dayOfWeek.Sun" = "الاحد";
+
+/*"dayOfWeek.Mon" = "Mon";
+"dayOfWeek.Tue" = "Tue";
+"dayOfWeek.Wed" = "Wed";
+"dayOfWeek.Thu" = "Thu";
+"dayOfWeek.Fri" = "Fri";
+"dayOfWeek.Sat" = "Sat";
+"dayOfWeek.Sun" = "Sun";*/
+
+/* Season numbers */
+"seasonNumber.one" = "الموسم الاول";
+"seasonNumber.two" = "الموسم الثاني";
+"seasonNumber.three" = "الموسم الثالث";
+"seasonNumber.four" = "الموسم الرابع";
+"seasonNumber.five" = "الموسم الخامس";
+"seasonNumber.six" = "الموسم السادس";
+"seasonNumber.seven" = "الموسم السابع";
+"seasonNumber.eight" = "الموسم الثامن";
+"seasonNumber.nine" = "الموسم التاسع";
+"seasonNumber.ten" = "الموسم العاشر";
+"seasonNumber.elevent" = "الموسم الحادي عسر";
+"seasonNumber.twelve" = "الموسم الثاني عشر";
+"seasonNumber.thriteen" = "الموسم الثالث عشر";
+"seasonNumber.fourteen" = "الموسم الرابع عشر";
+"seasonNumber.fifteen" = "الموسم الخامس عشر";
+"seasonNumber.sixteen" = "الموسم السادس عشر";
+"seasonNumber.seventeen" = "الموسم السابع عشر";
+"seasonNumber.eighteen" = "الموسم الثامن عشر";
+"seasonNumber.nineteen" = "الموسم التاسع عشر";
+"seasonNumber.twenty" = "الموسم العشرون";
+
+/* Sequel numbers */
+"sequelNumber.one" = "الجزء الاول";
+"sequelNumber.two" = "الجزء الثاني";
+"sequelNumber.three" = "الجزء الثالث";
+"sequelNumber.four" = "الجزء الرابع";
+"sequelNumber.five" = "الجزء الخامس";
+"sequelNumber.six" = "الجزء السادس";
+"sequelNumber.seven" = "الجزء السابع";
+"sequelNumber.eight" = "الجزء الثامن";
+"sequelNumber.nine" = "الجزء التاسع";
+"sequelNumber.ten" = "الجزء العاشر";
+"sequelNumber.elevent" = "الجزء الحادي عسر";
+"sequelNumber.twelve" = "الجزء الثاني عشر";
+"sequelNumber.thriteen" = "الجزء الثالث عشر";
+"sequelNumber.fourteen" = "الجزء الرابع عشر";
+"sequelNumber.fifteen" = "الجزء الخامس عشر";
+"sequelNumber.sixteen" = "الجزء السادس عشر";
+"sequelNumber.seventeen" = "الجزء السابع عشر";
+"sequelNumber.eighteen" = "الجزء الثامن عشر";
+"sequelNumber.nineteen" = "الجزء التاسع عشر";
+"sequelNumber.twenty" = "الجزء العشرون";
+
+/* Sorting */
+"common.filterAll.title" = "كل";
+"common.sorting.title" = "ترتيب";
+"common.sorting.ascending" = "ابجدي أ - ي";
+"common.sorting.descending" = "ابجدي ي - أ";
+"common.sorting.recency" = "من الاحدث الى الاقدم";
+
+/* Timestamp */
+"common.timestamp.rightnow" = "الآن";
+"common.timestamp.AMinute" = "منذ دقيقة";
+"common.timestamp.2Minutes" = "منذ دقيقتين";
+"common.timestamp.3-10Minutes" = "منذ %@ دقائق";
+"common.timestamp.11-59Minutes" = "منذ %@ دقائق";
+"common.timestamp.11-59Minutes" = "منذ %@ دقيقة";
+"common.timestamp.1Hour" = "منذ ساعة";
+"common.timestamp.2Hours" = "منذ ساعتين";
+"common.timestamp.3-10Hours" = "منذ %@ ساعات";
+"common.timestamp.11-23Hours" = "منذ %@ ساعة";
+"common.timestamp.1Day" = "أمس،";
+"common.timestamp.2Days" = "منذ يومين،";
+"common.timestamp.3-6Days" = "منذ %@ أيام،";
+
+/* app type */
+"app.type.trivia" = "كويز";
+"app.type.casting" = "طلب اشتراك";
+"app.type.competition" = "مسابقات";
+"app.type.mobileApp" = "تطبيقات الجوال";
+"app.type.voting" = "تصويت";
+"app.type.game" = "العاب";
+"app.type.other" = "اخرى";
+"app.type.livePost" = "بث مباشر";
+"app.ctaButton.trivia" = "شارك الان";
+"app.ctaButton.casting" = "شارك الان";
+"app.ctaButton.competition" = "شارك الان";
+"app.ctaButton.mobileApp" = "حمل التطبيق الان";
+"app.ctaButton.voting" = "شارك الان";
+"app.ctaButton.game" = "العب الان";
+"app.ctaButton.other" = "شارك الان";
+"app.ctaButton.livePost" = "تابعونا الان";
+"app.ctaButton.title" = "شارك الان";
+
+/* Side Menu */
+"sidemenu.navigation.title" = "جدول البرامج";
+"sidemenu.groupTitle.static" = "تصفح";
+"sidemenu.groupTitle.featurePage" = "تصنيف المحتوى";
+"sidemenu.staticPageTitle.stream" = "تيار الأخبار";
+"sidemenu.staticPageTitle.tv" = "العروض";
+"sidemenu.staticPageTitle.appsGames" = "تطبيقات ومسابقات";
+"sidemenu.staticPageTitle.interest" = "إهتمامات";
+"sidemenu.staticPageTitle.networks" = "شبكات";
+"sidemenu.staticPageTitle.favorite" = "مشاهير";
+"sidemenu.staticPageTitle.schedule" = "جدول البرامج";
+"sidemenu.staticPageTitle.episode" = "فيديوهات";
+"sidemenu.staticPageTitle.channel" = "قنوات";
+"sidemenu.staticPageTitle.signout" = "تسجيل خروج";
+"sidemenu.staticPageTitle.dummy" = "اسم الصفحة هنا";
+"sidemenu.copyright.title" = "MBC GROUP. 2018 الصفحة هنا";
+"sidemenu.staticPageTitle.shahid" = "SHAHID";
+"sidemenu.staticPageTitle.goboz" = "Goboz";
+"sidemenu.staticPageTitle.mbc3" = "MBC3";
+"sidemenu.staticPageTitle.aboutsite" = "عن الموقع";
+"sidemenu.staticPageTitle.aboutcorporate" = "MBC عن مجموعة";
+"sidemenu.staticPageTitle.mbccsr" = "الأمل MBC";
+"sidemenu.staticPageTitle.irecruitment" = "وظائف شاغرة";
+"sidemenu.staticPageTitle.freequency" = "ترددات القنوات";
+"sidemenu.staticPageTitle.contactus" = "اتصل بنا";
+"sidemenu.staticPageTitle.advertise" = "أعلن معنا";
+"sidemenu.staticPageTitle.hd" = "HD";
+"sidemenu.staticPageTitle.gobx" = "GOBX";
+"sidemenu.staticPageTitle.tos" = "شروط الاستخدام";
+"sidemenu.staticPageTitle.privacy" = "سياسة الخصوصية";
+
+"sidemenu.staticPageUrl.shahid" = "https://shahid.mbc.net/ar/";
+"sidemenu.staticPageUrl.goboz" = "https://www.goboz.net/#!";
+"sidemenu.staticPageUrl.mbc3" = "http://mbc3.mbc.net/?_ga=2.85041433.1047654935.1517480255-346288543.1502296377";
+"sidemenu.staticPageUrl.mbccsr" = "http://www.mbc.net/ar/corporate/csr.html";
+"sidemenu.staticPageUrl.irecruitment" = "https://irec.mbc.net/OA_HTML/RF.jsp?function_id=14296&resp_id=23350&resp_appl_id=800&security_group_id=0&lang_code=US&oas=ysGnSuLHzvMDXVgd_dWWrA..&params=evsN.OvwbEJ4gfmq9ULFp5iQCFONl9ej27ORBi9sBBiVCQGxHw15QneR8h2D4cNt";
+"sidemenu.staticPageUrl.gobx" = "http://www.gobx.com/ar/";
+"sidemenu.staticPageUrl.aboutcorporate" = "";
+"sidemenu.staticPageUrl.freequency" = "";
+"sidemenu.staticPageUrl.hd" = "";
+"sidemenu.staticPageUrl.aboutsite" = "http://www.mbc.net/ar/about-mbc.html";
+"sidemenu.staticPageUrl.tos" = "http://www.mbc.net/ar/terms-and-conditions.html";
+"sidemenu.staticPageUrl.privacy" = "http://www.mbc.net/ar/privacy.html";
+
+/* App version */
+"appversion.title.older" = "Madatory update";
+"appversion.title.newer" = "Update available";
+
+"appversion.message.older" = "There is an update available for you. Please update your application.";
+"appversion.message.newer" = "There is an update available for you. Please update your application.";
+
+"appversion.buttonclose.older" = "Close";
+"appversion.buttonupdate.older" = "Update";
+"appversion.buttonskipversion.newer" = "Skip this version";
+"appversion.buttonupdate.newer" = "Update";
+
+/* Page Menu */
+"pagemenu.newsfeed.title" = "الرئيسية";
+"pagemenu.videos.title" = "فيديوهات";
+"pagemenu.photos.title" = "صور";
+"pagemenu.about.title" = "عن";
+"pagemenu.episodes.title" = "شاهد الحلقات";
+"pagemenu.music.title" = "موسيقى";
+"pagemenu.apps.title" = "تطبيقات";
+"pagemenu.other.title" = "المزيد";
+"pagemenu.schedule.title" = "جدول البرامج";
+
+/* Page Detail */
+"pagedetail.followbutton.title" = "جدول البرامج";
+"pagedetail.remindbutton.title" = "تذكير";
+"pagedetail.header.votingformale" = "رقم المشترك";
+"pagedetail.header.votingforfemale" = "رقم المشتركة";
+"pagedetail.header.establishedYearSportTeam" = "تأسس عام";
+"pagedetail.header.establishedYearBand" = "تأسست عام";
+
+/* Card */
+"card.type.post" = "مشاركات";
+"card.type.article" = "خبر";
+"card.type.episodes" = "شاهد الحلقات";
+"card.type.image" = "صور";
+"card.type.link" = "رابط";
+"card.type.live" = "مباشر";
+"card.type.poll" = "استفتاءات";
+"card.type.textPost" = "مشاركات";
+"card.type.video" = "فيديوهات";
+"card.type.app" = "تطبيق";
+
+"card.follower.title" = "%@ مشاهدة";
+"card.likecount.title" = "%@ إعجاب";
+"card.commentcount.title" = "%@ تعليق";
+
+/* Infor Tab */
+"abouttab.name" = "الاسم";
+"abouttab.founded" = "تاسست عام";
+"abouttab.industry" = "تعمل في قطاع";
+"abouttab.subindustry" = "تعمل في مجال";
+"abouttab.country" = "البلد";
+"abouttab.city" = "المدينة";
+"abouttab.hqcountry" = "المركز الرئيسي";
+"abouttab.companywebsite" = "عنوان الموقع على الانترنت";
+"abouttab.email" = "البريد الالكتروني";
+"abouttab.title" = "اسم";
+"abouttab.eventtype" = "الفعاليات";
+"abouttab.eventname" = "اسم الفعالية";
+"abouttab.eventseasontitle" = "اسم الفعالية";
+"abouttab.eventyear" = "السنة";
+"abouttab.live/recorded" = "طبيعة الفعالية";
+"abouttab.startdate" = "موعد بدء الفعالية";
+"abouttab.enddate" = " موعد انتهاء الفعالية";
+"abouttab.time" = "توقيت الفعالية";
+"abouttab.venuename" = "اسم الموقع";
+"abouttab.venuesize" = "حجم الموقع";
+"abouttab.venuesizeformat" = "يتسع الموقع ل %@ شخص";
+"abouttab.venueaddress " = "موقع الفعالية";
+"abouttab.phone" = "هاتف";
+"abouttab.eventemail" = "هاتف";
+"abouttab.eventwebsite" = "موقع على الانترنت";
+"abouttab.channelname" = "اسم القناة";
+"abouttab.regions" = "نطاق التغطية";
+"abouttab.channelfrequency" = "ترددات القناة";
+"abouttab.genre" = "التصنيف";
+"abouttab.language" = "اللغة";
+"abouttab.season" = "الموسم";
+"abouttab.recorded" = "مسجلة";
+"abouttab.live" = "مباشر";
+"abouttab.fullname" = "الاسم الكامل";
+"abouttab.artistictitle" = "لقب الشهرة";
+"abouttab.occupation" = "الوظيفة";
+"abouttab.dateofbirth" = "تاريخ الميلاد";
+"abouttab.ripdate" = "تاريخ الوفاة";
+"abouttab.age" = "العمر";
+"abouttab.nationality" = "الجنسية";
+"abouttab.gender" = "نوع الجنس";
+"abouttab.horoscope" = "البرج";
+"abouttab.realname" = "الاسم الحقيقي";
+"abouttab.playernickname" = "اسم الشهرة";
+"abouttab.weight" = "الوزن";
+"abouttab.height" = "الطول";
+"abouttab.skilllevel" = "مرحلة المهارة";
+"abouttab.sporttype" = "نوع الرياضة";
+"abouttab.votingnumber" = "رقم التصويت";
+"abouttab.yearestablished" = "تاسس عام";
+"abouttab.sportteamtype" = "نوع الفريق الرياضي";
+"abouttab.sporttype" = "نوع الرياضة";
+"abouttab.stadiumname" = "اسم الملعب";
+"abouttab.coachname" = "اسم المدرب";
+"abouttab.teamcaptainname" = "اسم كابتن الفريق";
+"abouttab.musictype" = "نوع الموسيقى";
+"abouttab.arabicTitle" = "الاسم (العربي)";
+"abouttab.englishtitle" = "الاسم (الانجليزي)";
+"abouttab.showlanguage" = "لغة الفيلم";
+"abouttab.dialect" = "اللهجة";
+"abouttab.censorshipClass" = "فئة الرقابة";
+"abouttab.subtitlingDubbing" = "مترجم و مدبلج";
+"abouttab.movieCountry" = "انتاج (البلد)";
+"abouttab.yearDebuted" = "تاريخ العرض الاول";
+"abouttab.sequelNumber" = "الجزء";
+"abouttab.duration" = "مدة الفيلم";
+"abouttab.duration.showMovie" = "مدة الفيلم";
+"abouttab.duration.showNew" = "مدة النشرة";
+"abouttab.duration.showPlay" = "مدة المسرحية";
+"abouttab.duration.showMatch" = "مدة المباراة";
+"abouttab.awardTitle" = "اسم الجائزة";
+"abouttab.nationalTeam" = "المنتخب الوطني";
+"abouttab.clubTeam" = "نادي رياضي";
+"abouttab.metadataAreaTitle" = "بيانات قد تهمك";
+"abouttab.socialNetwoksAreaTitle" = "حسابات وروابط";
+"abouttab.locationTitle" = "مكان الحدث";
+"abouttab.section.about" = "معلومات";
+"abouttab.event.country" = "تقام الفعالية في الدول التالية";
+"abouttab.event.city" = "تقام الفعالية في المدن التالية";
+"abouttab.event.about" = "معلومات عن الفعالية";
+"abouttab.business.about" = "معلومات عن الشركة";
+"abouttab.channel.about" = "معلومات عن القناة";
+"abouttab.profile.aboutfemale" = "معلومات عنها";
+"abouttab.profile.aboutmale" = "معلومات عنه";
+"abouttab.profilesportteam.about" = "عن الفريق";
+"abouttab.profileband.about" = "عن الفرقة";
+"abouttab.showMovie.about" = "معلومات عن الفيلم";
+"abouttab.showSeries.about" = "عن المسلسل";
+"abouttab.showProgram.about" = "معلومات عن البرنامج";
+"abouttab.showNews.about" = "معلومات عن نشرة الاخبار";
+"abouttab.showPlay.about" = "معلومات عن المسرحية";
+"abouttab.showMatch.about" = "معلومات عن المبارة";
+"abouttab.award.about" = "معلومات عن الجائزة";
+"abouttab.profile.starMale" = "النجم";
+"abouttab.profile.starFemale" = "النجمة";
+"abouttab.profile.sportPlayerMale" = "اللاعب";
+"abouttab.profile.sportPlayerFemale" = "اللاعبة";
+"abouttab.profile.guestMale" = "الضيف";
+"abouttab.profile.guestFemale" = "الضيفة";
+"abouttab.profile.talentMale" = "المشترك";
+"abouttab.profile.talentFemale" = "المشتركة";
+"abouttab.profile.bandGender" = "الفرقة";
+"abouttab.profile.sportTeamGender" = "نوع الفريق الرياضي";
+"abouttab.show.liveRecorded" = "طبيعة البث";
+"homeStream.author" = "جويل";
+"abouttab.show.placeOfResidence" = "محل الإقامة";
+"abouttab.tabname.showMovie" = "عن الفيلم";
+"abouttab.tabname.showSeries" = "عن المسلسل";
+"abouttab.tabname.showProgram" = "عن البرنامج";
+"abouttab.tabname.showNews" = "عن النشرة";
+"abouttab.tabname.showPlay" = "عن المسرحية";
+"abouttab.tabname.showMatch" = "عن المباراة";
+"abouttab.tabname.event" = "عن الفعالية";
+"abouttab.tabname.section" = "معلومات";
+"abouttab.tabname.business" = "عن الشركة";
+"abouttab.seasion" = "الموسم";
+"abouttab.first" = "الاول";
+"abouttab.ic.male.born" = "ولد في %@";
+"abouttab.ic.female.born" = "ولدت في %@";
+"abouttab.ic.age" = "العمر %@";
+"abouttab.ic.horoscope" = "برج %@";
+"abouttab.ic.nationality" = "الجنسية %@";
+"abouttab.ic.character" = "شخصية %@";
+"abouttab.ic.sequelNumber" = "الجزء %@";
+"abouttab.ic.seasonNumber" = "الموسم %@";
+
+/* Login VC */
+"login.title" = "الخاص بكMBCحساب";
+"login.subTitle" = "سجل الدخول بحساب MBC الخاص بك";
+"login.loginByEmail" = "تسجيل الدخول";
+"login.loginByFacebook" = "تسجيل الدخول عن طريق فيسبوك";
+"login.emailRegistration" = "تسجيل حساب جديد";
+"login.forgotPassword" = "نسيت كلمة السر؟";
+"login.click_link_retrieve_password" = "اضغط على الرابط التالي لاسترجاع كلمة السر";
+"login.retrieve_password" = "استرجاع كلمة السر";
+
+/* Forgot password VC */
+"forgotpass.title1" = "إسترجاع كلمة السر";
+"forgotpass.subTitle1" = "الرجاء إدخال البريد الإلكتروني لإسترجاع كلمة السر";
+"forgotpass.resetPassword" = "أرسل الرابط ";
+"forgotpass.title2" = "تم إسال الرابط";
+"forgotpass.subTitle2" = "تم إرسال بريد إلكتروني يحتوي على رابط لإعادة ضبط كلمة السر";
+"forgotpass.resendEmail" = "أرسل البريد الإلكتروني مرة آخرى";
+"forgotpass.openLoginVC" = "تسجيل الدخول";
+
+/* Signup */
+"signup.title" = "تسجل حساب جديد";
+"signup.subTitle" = "الرجاء إدخال البيانات التالية";
+
+"signup.enterFullname.placeHolder" = "أدخل الاسم الكامل";
+"signup.enterDateOfBirth.placeHolder" = "تاريخ الميلاد";
+"signup.reEnterPassword.placeHolder" = "تأكيد كلمة السر";
+
+"signup.whyWeAskForInformation" = "لم نطلب منك هذه المعلومات؟";
+"signup.acceptTermsAndPrivacy" = "أقبل بشروط الاستخدام و سياسة الخصوصية";
+"signup.dontWantToGetPromotion" = "لا أود الحصول على العروض التروجية أو البحوث ";
+
+"signup.signup.buttonTitle" = "تسجيل";
+"signup.signupWithFacebook.buttonTitle" = "تسجيل حساب عن طرق فيسبوك";
+"signup.backToLogin" = "تسجيل الدخول";
+
+"signup.privacyPolicy" = "سياسة الخصوصية";
+"signup.use" = "الاستخدام";
+
+/* Email Verification */
+"emailVerification.login" = "تسجيل الدخول";
+"emailVerification.sendEmailAgain" = "أرسل البريد الإلكتروني مرة آخرى";
+"emailVerification.title" = "الرجاء تفعيل حسابك";
+"emailVerification.subTitle" = "تم إرسال بريد إلكتروني يحتوي على رابط لتفعيل الحساب";
+
+/* User profile */
+"userProfile.title" = "تعديل البيانات";
+"userProfile.tabActivityLog.title" = "بندل سبسكرايب";
+"userProfile.tabSetting.title" = "منج ريمايندرز";
+"userProfile.tabProfile.title" = "ابديت يوزر ذاتا";
+/* ---- Tab profile */
+"userProfile.tabProfile.fullName" = "الاسم الكامل";
+"userProfile.tabProfile.email" = "البريد الإلكتروني";
+"userProfile.tabProfile.gender" = "الجنس";
+"userProfile.tabProfile.password" = "كلمة السر";
+"userProfile.tabProfile.marriedStatus" = "الحالة الإجتماعية";
+"userProfile.tabProfile.phoneNumber" = "رقم الهاتف";
+"userProfile.tabProfile.birthday" = "تاريخ الميلاد";
+"userProfile.tabProfile.nationality" = "الجنسية";
+"userProfile.tabProfile.address" = "العنوان";
+"userProfile.tabProfile.city" = "المدينة";
+"userProfile.tabProfile.country" = "الدولة";
+"userProfile.tabProfile.oldPassword.placeHolder" = "أدخل كلمة السر الحالية";
+"userProfile.tabProfile.newPassword.placeHolder" = "دخل كلمة السر الجديدة";
+"userProfile.tabProfile.renewPassword.placeHolder" = "تأكيد كلمة السر الجديدة";
+
+/* Comment */
+"comment.title" = "التعليقات";
+"comment.flagRemove" = "منذ دقيقتين";
+"comment.sendButton.title" = "إضافة";
+"ipad.comment.sendButton.title" = "أضف تعليقك";
+"comment.inputMessage.placeholder" = "أضف تعليقك هنا";
+"ipad.comment.inputMessage.placeholder" = "إضافةاكتب تعليقك هنا";
+"comment.confirmDelete" = "Your comment is now in the mode %@. Are you sure you want to remove your comment? Please be noted this action would not undo.";
+"comment.pending" = "Awaiting for approval";
+"comment.approved" = "Approved";
+"comment.loadMore" = "اقرأ المزيد";
+
+/* App Listing */
+"appListing.title" = "تطبيقات و العاب";
+"appListing.filterByAppType" = "حدد نوع التطبيق";
+"appListing.filterByAuthor" = "حدد صفحة التصبيق";
+
+/* Ads */
+"ads.title" = "إعلان";
+
+/* Star Page Listing */
+"starPageListing.title" = "قائمة المشاهير";
+"starPageListing.filterByMonthOfBirth" = "مواليد الشهر";
+"starPageListing.filterByOccupation" = "المهنة";
+
+/* Related Content */
+"relatedContent.SectionTitle" = "مقترحات";
+
+/* Bundle */
+"bundle.contentNo" = "%@ خبر";
+
+/* Search result menu */
+"searchResult.title" = "نتائج البحث";
+"searchResult.titleNotFound" = "هل تعني؟";
+"searchResult.messageNotFound" = "نعتذر! لا يوجد نتائج في هذا البحث %@";
+"searchResult.all" = "الكل";
+"searchResult.pages" = "صفحات";
+"searchResult.videos" = "فيديوهات";
+"searchResult.photos" = "صور";
+"searchResult.articles" = "اخبار";
+"searchResult.apps" = "تطبيقات";
+"searchResult.playlists" = "قوائم الفيديوهات";
+"searchResult.bundles" = "قوائم منوعة";
+"searchResult.menuItem" = "(%@) %@";
+
+/* Search suggestion */
+"searchSuggestion.showAllResult" = "عرض جميع النتائج";
+"searchSuggestion.delete.title" = "حذف";
+"searchSuggestion.history.title" = "سجل البحث";
+"searchSuggestion.post.article" = "%@ . خبر";
+"searchSuggestion.post.episodes" = "%@ . حلاقات";
+"searchSuggestion.post.images" = "%@ . صور";
+"searchSuggestion.post.link" = "%@ . رابط";
+"searchSuggestion.post.live" = "%@ . مباشر";
+"searchSuggestion.post.poll" = "%@ . استفتاءات";
+"searchSuggestion.post.text" = "%@ . مشاركات";
+"searchSuggestion.post.video" = "%@ . فيديوهات";
+"searchSuggestion.profile.sportTeam" = "%@-تأسس عام";
+"searchSuggestion.gender.male" = "male";
+"searchSuggestion.format.metadata" = "%@-%@";
+"searchSuggestion.format.talent" = "%@-%@ %@";
+
+/* Radio Scheduler */
+"radioScheduler.liveStreaming" = "البث المباشر";
+"radioScheduler.subChanelTitle" = "القنوات";
+"radioScheduler.subScheduleTitle" = "جدول البرامج";
+"radioScheduler.formatSchedule" = "%@ - %@";
+
+/* Channel */
+"channelListing.screenTitle" = "قائمة القنوات";
+
+/* Air time list */
+"airTimeList.Title" = "مواعيد العرض";
+
+/* Show/Program Listing */
+"showListing.title" = "قائمة العروض";
+"showListing.filterBySubType" = "النوع";
+"showListing.filterByGenre" = "التصنيفات";
+
+/* Notification */
+"notification.male.title" = "مرحباً، %@";
+"notification.male.body" = "لقد لاحظنا أنك لم تزر %@ منذ فترة!هناك الكثير من النشاطات التي فاتتك. لا تفوت المزيد";
+"notification.female.title" = "مرحباً، %@";
+"notification.female.body" = "لقد لاحظنا أنك لم تزوري %@ منذ فترة!هناك الكثير من النشاطات التي فاتتك. لا تفوتي المزيد";
+
+/* Tagged Page Listing */
+"taggedPageListing.title" = "أشار الى";
+
+/* App update */
+"appupdate.button.update" = "تحديث";
+"appupdate.button.skip" = "تخطی";
+
+/* GEO targeting */
+"geoTarget.title" = ".عذرا هذه الصفحة غير متاحا حاليا";
+"geoTarget.subTitle" = "للرجوع للصفحة الرئيسية";
+"geoTarget.button.title" = "اضغط هنا";
+
+/* Form screen */
+"form.advertisement.title" = "أعلن معنا";
+"form.contactUs.title" = "اتصل بنا";
+
+"form.placeHolder.writeHere" = "اكتب هنا";
+
+"form.contactUs.label.title" = "اتصل بن";
+"form.contactUs.label.description" = "شكرا لزيارتكم موقعنا. نرحب برسائلكم وأسئلتكم واقتراحاتكم التي ستلقى اهتماما وترحيبا من إدارة الموقع. نحن نتطلع دائما إلى أن نكون بوابة الترفيه العربية الأولى من خلال بناء علاقة الثقة المتبادلة بين زائرنا وموقعنا، وتعزيز التفاعل من خلال الردود على رسائلكم. لا تتردد في إرسال ما تريد، فالتفوق طريقنا دائما منكم وإليكم.\n\nفضلا، أرجو ملء الخانات أدناه،";
+
+"form.advertisement.label.title" = "اعلن معنا";
+"form.advertisement.label.description" = "عميلنا العزيز، للإعلان على قنوات ومواقع MBC, يرجى إدخال البيانات وإرسال الطلب فضلا، نرجو ملء الخانات أدناه،";
+
+"form.advertisement.sendOK.title1" = "لزائر الكريم، وصلتنا رسالتك، وسيتم الرد عليك قريباً.";
+
+"form.contactUs.sendOK.title1" = "شكرا لمشاركتك معنا..";
+"form.contactUs.sendOK.title2" = "سوف نولى رسالتك أقصى اهتمامنا مع الأخذ بعين الاعتبار ضغط الرسائل الواردة إلينا";
+
+"form.name" = "الاسم";
+"form.email" = "البريد الإلكتروني";
+"form.address" = "العنوان";
+"form.company" = "الشركة";
+"form.advertiseOn" = "أعلن على";
+"form.phone" = "الهاتف";
+"form.message.contactUs" = "نص الرسالة";
+"form.message.advertisement" = "الطلب";
+"form.gender" = "الجنس";
+"form.subject" = "الموضوع";
+"form.preferredContactMethod" = "وسيلة التواصل التي تفضلها";
+
+"form.advertiseOn.TV" = "1 تلفزيون";
+"form.advertiseOn.online" = "2 أونلاين";
+"form.advertiseOn.radio" = "3 راديو";
+"form.advertiseOn.event" = "4 تنظيم فعاليات";
+"form.advertiseOn.others" = "5 أخرى";
+
+"form.preferContactMethod.byPhone" = "عبر الهاتف";
+"form.preferContactMethod.byEmail" = "عبر البريد الالكتروني";
+
+"form.subject.winnerInquiry" = "استفسار من فائز 1";
+"form.subject.competitionInquiry" = "استفسار عن مسابقة 2";
+"form.subject.billingInquiry" = "استفسار عن فاتورة 3";
+"form.subject.generalFeedback" = "تعليق عام 4";
+"form.subject.MBCChannel" = "قنوات MBC 5";
+"form.subject.MBCRadios" = "اذاعة MBC 6";
+"form.subject.MBCOnline" = "موقع MBC 7";
+"form.subject.SMSServices" = "خدمات الSMS 8";
+"form.subject.events" = "فعاليات 9";
+"form.subject.arabGotTalent" = "Arabs Got Talent 10";
+"form.subject.ArabIdol" = "Arab Idol 11";
+"form.subject.theVoice" = "The Voice 12";
+"form.subject.theXfactor" = "THE X FACTOR 13";
+"form.subject.theVoiceKid" = "The Voice Kids 14";

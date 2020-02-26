@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SchedulerDaySelectionCellid" id="KGk-i7-Jjw" customClass="SchedulerDaySelectionCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jwn-9F-0aV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xk-Cm-hKz" userLabel="View - day">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkO-TP-hCw" userLabel="View - carousel" customClass="iCarousel">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlK-Ue-tUh" userLabel="Button - left">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="48"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="x7n-fd-1xm"/>
+                                        </constraints>
+                                        <state key="normal" image="icon.leftArrow"/>
+                                        <connections>
+                                            <action selector="buttonLeftTouch" destination="KGk-i7-Jjw" eventType="touchUpInside" id="P3q-pA-Npp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdq-5c-NlG" userLabel="Button - right">
+                                        <rect key="frame" x="359" y="0.0" width="16" height="48"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="FFT-ng-vIy"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="LQ4-UZ-hId"/>
+                                        </constraints>
+                                        <state key="normal" image="icon.rightArrow"/>
+                                        <connections>
+                                            <action selector="buttonRightTouch" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Knd-72-3Fb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Cdq-5c-NlG" firstAttribute="top" secondItem="2xk-Cm-hKz" secondAttribute="top" id="1v9-pe-oSb"/>
+                                    <constraint firstItem="hlK-Ue-tUh" firstAttribute="top" secondItem="2xk-Cm-hKz" secondAttribute="top" id="6nV-ch-b2y"/>
+                                    <constraint firstAttribute="height" constant="48" id="CoP-EF-CsY"/>
+                                    <constraint firstAttribute="bottom" secondItem="dkO-TP-hCw" secondAttribute="bottom" id="LX7-3B-qxQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="hlK-Ue-tUh" secondAttribute="bottom" id="LqA-yH-vyf"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cdq-5c-NlG" secondAttribute="bottom" id="Scf-zF-Kg6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cdq-5c-NlG" secondAttribute="trailing" id="UJP-nZ-uyJ"/>
+                                    <constraint firstItem="dkO-TP-hCw" firstAttribute="top" secondItem="2xk-Cm-hKz" secondAttribute="top" id="VRw-uJ-I0w"/>
+                                    <constraint firstItem="Cdq-5c-NlG" firstAttribute="leading" secondItem="dkO-TP-hCw" secondAttribute="trailing" id="iV3-Vd-7gu"/>
+                                    <constraint firstItem="dkO-TP-hCw" firstAttribute="leading" secondItem="hlK-Ue-tUh" secondAttribute="trailing" id="wnP-PG-mDH"/>
+                                    <constraint firstItem="hlK-Ue-tUh" firstAttribute="leading" secondItem="2xk-Cm-hKz" secondAttribute="leading" id="yXt-Fa-Fib"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جدول البرامج" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVp-96-eyf" userLabel="Label -title">
+                                <rect key="frame" x="16" y="64" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="14"/>
+                                <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aVp-96-eyf" firstAttribute="leading" secondItem="ro1-OO-dnU" secondAttribute="leading" constant="16" id="0ZA-Qf-o4v"/>
+                            <constraint firstItem="2xk-Cm-hKz" firstAttribute="trailing" secondItem="ro1-OO-dnU" secondAttribute="trailing" id="DBA-yc-HTR"/>
+                            <constraint firstItem="2xk-Cm-hKz" firstAttribute="leading" secondItem="ro1-OO-dnU" secondAttribute="leading" id="PYS-v2-bbF"/>
+                            <constraint firstItem="ro1-OO-dnU" firstAttribute="trailing" secondItem="aVp-96-eyf" secondAttribute="trailing" constant="16" id="Xji-dg-s2E"/>
+                            <constraint firstItem="ro1-OO-dnU" firstAttribute="bottom" secondItem="aVp-96-eyf" secondAttribute="bottom" constant="16" id="Zuw-sD-7jT"/>
+                            <constraint firstItem="2xk-Cm-hKz" firstAttribute="top" secondItem="ro1-OO-dnU" secondAttribute="top" id="elB-Xc-pVQ"/>
+                            <constraint firstItem="aVp-96-eyf" firstAttribute="top" secondItem="2xk-Cm-hKz" secondAttribute="bottom" constant="16" id="jxr-xy-eIS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ro1-OO-dnU"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Jwn-9F-0aV" secondAttribute="trailing" id="PxP-Z9-WCr"/>
+                    <constraint firstItem="Jwn-9F-0aV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Xd5-Es-yof"/>
+                    <constraint firstItem="Jwn-9F-0aV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wpd-7B-cfJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Jwn-9F-0aV" secondAttribute="bottom" id="xmo-W1-wpy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="icarousel" destination="dkO-TP-hCw" id="dgj-dR-cef"/>
+                <outlet property="leftButton" destination="hlK-Ue-tUh" id="5By-W6-9hW"/>
+                <outlet property="rightButton" destination="Cdq-5c-NlG" id="GR5-Ew-k5O"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon.leftArrow" width="5" height="8"/>
+        <image name="icon.rightArrow" width="5" height="8"/>
+    </resources>
+</document>

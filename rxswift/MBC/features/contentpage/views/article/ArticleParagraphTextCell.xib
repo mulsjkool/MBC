@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleParagraphTextCell" id="iyc-u9-UzJ" customClass="ArticleParagraphTextCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iyc-u9-UzJ" id="FYy-2j-aVT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcS-DQ-FQ6">
+                        <rect key="frame" x="16" y="16" width="343" height="0.0"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="16"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll2-K7-zoD">
+                        <rect key="frame" x="16" y="40" width="343" height="0.0"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="14"/>
+                        <color key="textColor" red="0.37647058823529411" green="0.49019607843137253" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ll2-K7-zoD" secondAttribute="trailing" constant="16" id="1zI-K8-AiS"/>
+                    <constraint firstAttribute="bottom" secondItem="ll2-K7-zoD" secondAttribute="bottom" id="Dbt-6Q-uPP"/>
+                    <constraint firstItem="ll2-K7-zoD" firstAttribute="top" secondItem="jcS-DQ-FQ6" secondAttribute="bottom" constant="24" id="LcQ-dL-X3a"/>
+                    <constraint firstItem="jcS-DQ-FQ6" firstAttribute="leading" secondItem="FYy-2j-aVT" secondAttribute="leading" constant="16" id="WwV-m8-nNg"/>
+                    <constraint firstItem="jcS-DQ-FQ6" firstAttribute="top" secondItem="FYy-2j-aVT" secondAttribute="top" constant="16" id="bWQ-gw-ulQ"/>
+                    <constraint firstItem="ll2-K7-zoD" firstAttribute="leading" secondItem="FYy-2j-aVT" secondAttribute="leading" constant="16" id="mHP-nB-4lp"/>
+                    <constraint firstAttribute="trailing" secondItem="jcS-DQ-FQ6" secondAttribute="trailing" constant="16" id="tEA-kR-VfW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="ll2-K7-zoD" id="gjq-Pc-Qnt"/>
+                <outlet property="descriptionLabelTopConstraint" destination="LcQ-dL-X3a" id="Ixn-cW-7lR"/>
+                <outlet property="titleLabel" destination="jcS-DQ-FQ6" id="Gj8-XC-yZx"/>
+                <outlet property="titleLabelTopConstraint" destination="bWQ-gw-ulQ" id="Q1F-fE-3OJ"/>
+            </connections>
+            <point key="canvasLocation" x="-59.5" y="-24"/>
+        </tableViewCell>
+    </objects>
+</document>

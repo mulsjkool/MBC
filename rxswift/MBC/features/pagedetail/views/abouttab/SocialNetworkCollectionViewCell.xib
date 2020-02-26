@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SocialNetworkCollectionViewCell" id="p1C-8Z-Bgl" customClass="SocialNetworkCollectionViewCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGV-xO-Rv1">
+                        <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oGV-xO-Rv1" secondAttribute="bottom" id="3kV-PY-Kl1"/>
+                <constraint firstAttribute="trailing" secondItem="oGV-xO-Rv1" secondAttribute="trailing" id="cVG-lJ-Puy"/>
+                <constraint firstItem="oGV-xO-Rv1" firstAttribute="leading" secondItem="p1C-8Z-Bgl" secondAttribute="leading" id="d9R-2u-ulK"/>
+                <constraint firstItem="oGV-xO-Rv1" firstAttribute="top" secondItem="p1C-8Z-Bgl" secondAttribute="top" id="l3h-dq-qTV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="47C-N7-tIv"/>
+            <connections>
+                <outlet property="button" destination="oGV-xO-Rv1" id="8Rr-MR-hpK"/>
+            </connections>
+            <point key="canvasLocation" x="-96" y="-47"/>
+        </collectionViewCell>
+    </objects>
+</document>

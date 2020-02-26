@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>THEOplayer WebView</title>
+    <base href="https://theoplayer.doubleclick.net/"/>
+    <script src="theo://theoplayer.doubleclick.net/sdkBundle/sdk-utils.js"></script>
+    <script>
+        var DEFAULT_CSS_PATH = 'ui.css';
+        var DEFAULT_PARAMS = {
+            chromeless : 'false',
+            cssPaths : DEFAULT_CSS_PATH
+        };
+    </script>
+    <script>
+        var assetsBase = 'theo://theoplayer.doubleclick.net/';
+        var sdkBase = assetsBase + 'sdkBundle/';
+
+        var resolveURL = function (url) {
+            if (url.startsWith('//')) {
+                // protocol-relative URL, resolved with <base>
+                return url;
+            } else if (/^\w+:/.test(url)) {
+                // URL with protocol scheme
+                return url;
+            } else if (url.startsWith('/')) {
+                // e.g. /appBundle/customUI.css
+                return assetsBase + url;
+            } else {
+                // e.g. ui.css
+                return sdkBase + url;
+            }
+        };
+
+        // parse query params
+        var sdkParams = (function () {
+            function parseQueryParameters() {
+                var searchString = window.location.search.substring(1);
+
+                if (!searchString) {
+                    return DEFAULT_PARAMS;
+                } else {
+                    var parameters = {};
+                    var paramStrings = searchString.split("&");
+                    for (var i = 0; i < paramStrings.length; i++) {
+                        var pair = paramStrings[i].split("=");
+                        parameters[pair[0]] = pair[1];
+                    }
+                    return parameters;
+                }
+            }
+
+            return parseQueryParameters();
+        })();
+
+        // load libraries
+        (function (sdkParams) {
+
+            if (sdkParams.chromecast === 'true') {
+                createScript('chromecast-sender.js')
+            }
+
+            if (sdkParams.googleIMA === 'true') {
+                createScript('https://imasdk.googleapis.com/js/sdkloader/ima3.js')
+            }
+
+            if (sdkParams.youboraOptions) {
+                createScript('https://smartplugin.youbora.com/v6/js/adapters/theoplayer2/6.0.0/sp.min.js')
+            }
+
+            var cssPaths = sdkParams.cssPaths ? sdkParams.cssPaths.split(",") : [];
+            for (var pathIndex in cssPaths) {
+                createStyle(cssPaths[pathIndex]);
+            }
+
+            createScript(sdkParams.chromeless === 'true' ? 'THEOplayer.chromeless.js' : 'THEOplayer.js');
+
+            var jsPathsPre = sdkParams.jsPathsPre ? sdkParams.jsPathsPre.split(",") : [];
+            for (var pathIndex in jsPathsPre) {
+                var src = jsPathsPre[pathIndex];
+                createScript(src);
+            }
+
+        })(sdkParams);
+
+        function createScript(src) {
+            document.write('<script type="text/javascript" src="' + resolveURL(src) + '"></' + 'script>');
+        }
+
+        function createStyle(src) {
+            document.write('<link rel="stylesheet" type="text/css" href="' + resolveURL(src) + '">');
+        }
+
+    </script>
+
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .player-div {
+            background: #000000;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .theoplayer-skin video::-webkit-media-controls-start-playback-button {
+            display: none !important;
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class='player-div video-js theoplayer-skin'></div>
+
+<script>
+
+    window["THEOplayerBridge"] = {};
+
+    window["THEOplayerBridge"][sdkParams.playerID] = {
+        "eventListeners" : {}
+    };
+
+    (function (sdkParams) {
+
+        function toAnalyticsOptions(youboraOptions) {
+            try {
+                return JSON.parse(decodeURIComponent(youboraOptions));
+            } catch (e) {
+                console.log('Unable to parse youbora options ' + youboraOptions);
+                return null;
+            }
+        }
+
+        function convertBooleanStringToBoolean(value) {
+            if (value === 'true') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function populateAdsSettings() {
+            var adsSettings = {};
+            if (sdkParams.adPreloadType && sdkParams.showAdsCountdown !== undefined) {
+                adsSettings.ads = {
+                    preload : sdkParams.adPreloadType,
+                    showCountdown : convertBooleanStringToBoolean(sdkParams.showAdsCountdown)
+                }
+
+            }
+            return adsSettings;
+        }
+
+        function populateChromecastSettings(strategy) {
+            return {
+                cast : {
+                    strategy : strategy
+                }
+            };
+        }
+
+        var youboraOptions = toAnalyticsOptions(sdkParams.youboraOptions);
+        var moatOptions = toAnalyticsOptions(sdkParams.moatOptions);
+        var analytics = [];
+        if (!!moatOptions) {
+            analytics.push(moatOptions);
+        }
+        if (!!youboraOptions) {
+            analytics.push(youboraOptions);
+        }
+        var playerConfiguration = analytics.length > 0 ? { analytics : analytics } : {};
+        var adsConfig = populateAdsSettings();
+        var uiConfig = sdkParams.uilanguage
+            ? { ui : { language : sdkParams.uilanguage } }
+            : {};
+        var playerIdConfig = { uid : sdkParams.playerID };
+        var chromecastConfig = populateChromecastSettings(sdkParams.castStrategy);
+
+        var element = document.querySelector('.player-div');
+        var configuration = Object.assign({
+            libraryLocation : "."
+        }, playerConfiguration, adsConfig, uiConfig, playerIdConfig, chromecastConfig);
+
+        var player = sdkParams.chromeless === 'true'
+            ? new THEOplayer.ChromelessPlayer(element, configuration)
+            : new THEOplayer.Player(element, configuration);
+
+        var jsPaths = sdkParams.jsPaths ? sdkParams.jsPaths.split(",") : [];
+        for (var pathIndex in jsPaths) {
+            createScript(jsPaths[pathIndex]);
+        }
+
+        window["player"] = THEOplayer.players.getPlayerByUID(player.uid);
+
+    })(sdkParams);
+
+</script>
+</body>
+</html>

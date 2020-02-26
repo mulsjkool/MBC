@@ -1,0 +1,56 @@
+# RxSwift - A library supports reactive programming
+ github "ReactiveX/RxSwift"
+
+# SwiftyJSON - A library supports JSON parser
+ github "SwiftyJSON/SwiftyJSON"
+
+# Reachability - A library supports networking monitoring
+ github "ashleymills/Reachability.swift"
+
+# SwiftHTTP - A library supports HTTP networking
+ github "daltoniam/SwiftHTTP"
+
+# Texture (AsyncDisplayKit) - A library supports rendering UI in background
+# github "texturegroup/texture"
+
+# MisterFusion - A library supports build auto layout in code with ease
+ github "szk-atmosphere/MisterFusion"
+
+# R.swift - A library supports fancy const string, font and resources
+ github "mac-cain13/R.swift.Library"
+
+# Kanna - A library supports XML/HTML parse
+# github "tid-kijyun/Kanna"
+
+# A lightweight, pure-Swift library for downloading and caching images from the web
+ github "onevcat/Kingfisher"
+
+# A drop-in replacement for UILabel that supports attributes, data detectors, links, and more
+ github "TTTAttributedLabel/TTTAttributedLabel"
+
+# A badge control for iOS and tvOS written in Swift
+ github "evgenyneu/swift-badge"
+
+# Mock the Swift Objects
+ github "SwiftKit/Cuckoo"
+
+# Carousel
+ github "Dschee/iCarousel" "without-examples"
+
+# loading circular - Use in load next album
+ github "kaandedeoglu/KDCircularProgress"
+
+# indicator when run API
+ github "jdg/MBProgressHUD"
+
+# Parsing html
+ github "scinfu/SwiftSoup"
+
+# SKPhoto Browser
+ github "camapblue/SKPhotoBrowser" "master"
+
+#SideMenu
+ github "jonkykong/SideMenu" "master"
+
+#Blur
+# github "efremidze/VisualEffectView"

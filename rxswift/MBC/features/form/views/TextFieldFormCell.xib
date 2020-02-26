@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldFormCellId" rowHeight="101" id="KGk-i7-Jjw" customClass="TextFieldFormCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="463" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاسم " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFV-5O-K91">
+                        <rect key="frame" x="16" y="24" width="32" height="14.5"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="12"/>
+                        <color key="textColor" red="0.47058823529411764" green="0.56470588235294117" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cN-QD-GKt">
+                        <rect key="frame" x="48" y="18" width="7.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.93725490196078431" green="0.32549019607843138" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0lQ-G5-jfP">
+                        <rect key="frame" x="76.5" y="8" width="370.5" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="MkZ-5C-UlZ"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dup-v0-V0X">
+                        <rect key="frame" x="77" y="44" width="370.5" height="14.5"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                        <color key="textColor" red="0.93725490196078431" green="0.32549019607843138" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2HS-Uc-bRK" userLabel="LineView">
+                        <rect key="frame" x="0.0" y="61.5" width="463" height="1"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="y4u-1V-5f5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dup-v0-V0X" firstAttribute="centerX" secondItem="0lQ-G5-jfP" secondAttribute="centerX" id="2HY-Uh-zuG"/>
+                    <constraint firstItem="Dup-v0-V0X" firstAttribute="top" secondItem="0lQ-G5-jfP" secondAttribute="bottom" constant="4" id="GJP-3e-eSB"/>
+                    <constraint firstItem="0lQ-G5-jfP" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.8" id="Vom-co-0uE"/>
+                    <constraint firstAttribute="trailing" secondItem="2HS-Uc-bRK" secondAttribute="trailing" id="XOp-if-ggH"/>
+                    <constraint firstItem="0cN-QD-GKt" firstAttribute="baseline" secondItem="sFV-5O-K91" secondAttribute="baseline" id="Zml-pp-mJ8"/>
+                    <constraint firstItem="Dup-v0-V0X" firstAttribute="width" secondItem="0lQ-G5-jfP" secondAttribute="width" id="aFL-2a-ere"/>
+                    <constraint firstItem="0lQ-G5-jfP" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="fJu-GY-WEC"/>
+                    <constraint firstItem="sFV-5O-K91" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gxO-3x-Cmc"/>
+                    <constraint firstItem="0cN-QD-GKt" firstAttribute="leading" secondItem="sFV-5O-K91" secondAttribute="trailing" id="mG1-Qi-e9f"/>
+                    <constraint firstAttribute="bottom" secondItem="2HS-Uc-bRK" secondAttribute="bottom" id="oLH-UQ-eSV"/>
+                    <constraint firstItem="sFV-5O-K91" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ogP-JG-f2c"/>
+                    <constraint firstItem="2HS-Uc-bRK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="u0X-ju-0Xv"/>
+                    <constraint firstAttribute="bottom" secondItem="Dup-v0-V0X" secondAttribute="bottom" constant="4" id="uq0-Ev-6RE"/>
+                    <constraint firstItem="0lQ-G5-jfP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="vcY-y0-nRe"/>
+                    <constraint firstAttribute="trailing" secondItem="0lQ-G5-jfP" secondAttribute="trailing" constant="16" id="zma-GR-Jkg"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Vom-co-0uE"/>
+                        <exclude reference="fJu-GY-WEC"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="constraints">
+                        <include reference="fJu-GY-WEC"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=regular">
+                    <mask key="constraints">
+                        <include reference="Vom-co-0uE"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="errorLabel" destination="Dup-v0-V0X" id="1Y0-lm-l6C"/>
+                <outlet property="textField" destination="0lQ-G5-jfP" id="wGE-cB-nmV"/>
+                <outlet property="titleLabel" destination="sFV-5O-K91" id="gH0-zL-5II"/>
+            </connections>
+            <point key="canvasLocation" x="-1212" y="-73"/>
+        </tableViewCell>
+    </objects>
+</document>

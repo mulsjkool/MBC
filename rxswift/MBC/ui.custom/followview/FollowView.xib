@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FollowView" customModule="MBC" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="2Yt-Ew-26I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="68" height="24"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGE-lm-qPf" userLabel="View - Content">
+                    <rect key="frame" x="0.0" y="0.0" width="68" height="24"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DVu-5X-atq">
+                            <rect key="frame" x="0.0" y="0.0" width="68" height="24"/>
+                            <state key="normal">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="متابعة">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="10" name="29LTKaff-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.pagedetail.heart" translatesAutoresizingMaskIntoConstraints="NO" id="W7c-eT-XpD">
+                            <rect key="frame" x="6" y="5.5" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="W7c-eT-XpD" secondAttribute="height" id="EdH-Nu-sMX"/>
+                                <constraint firstAttribute="width" constant="12" id="LVP-TJ-art"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="W7c-eT-XpD" firstAttribute="leading" secondItem="qGE-lm-qPf" secondAttribute="leading" constant="6" id="3Ha-TL-xVp"/>
+                        <constraint firstItem="DVu-5X-atq" firstAttribute="top" secondItem="qGE-lm-qPf" secondAttribute="top" id="5Ob-iT-yHk"/>
+                        <constraint firstItem="W7c-eT-XpD" firstAttribute="centerY" secondItem="qGE-lm-qPf" secondAttribute="centerY" id="8Wi-xR-UvJ"/>
+                        <constraint firstItem="DVu-5X-atq" firstAttribute="leading" secondItem="qGE-lm-qPf" secondAttribute="leading" id="QEg-Fy-R4V"/>
+                        <constraint firstAttribute="bottom" secondItem="DVu-5X-atq" secondAttribute="bottom" id="foo-bl-667"/>
+                        <constraint firstAttribute="trailing" secondItem="DVu-5X-atq" secondAttribute="trailing" id="je3-0r-FHT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.32549019607843138" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qGE-lm-qPf" secondAttribute="bottom" id="01F-gm-iLW"/>
+                <constraint firstItem="qGE-lm-qPf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="H74-G8-Bol"/>
+                <constraint firstItem="qGE-lm-qPf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="r8u-99-Zli"/>
+                <constraint firstAttribute="trailing" secondItem="qGE-lm-qPf" secondAttribute="trailing" id="txy-ca-VAo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-29.5" y="-129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon.pagedetail.heart" width="12" height="11"/>
+    </resources>
+</document>

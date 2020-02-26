@@ -1,0 +1,29 @@
+@font-face {
+    font-family: LTKaff;
+    src: url(../../fonts/29LT-Kaff-Regular.otf);
+}
+
+@font-face {
+    font-family: LTKaffBold;
+    src: url(../../fonts/29LT-Kaff-Semi-Bold.otf);
+}
+
+@font-face {
+    font-family: LTKaffMedium;
+    src: url(../../fonts/29LT-Kaff-Semi-Bold.otf);
+}
+
+body {
+  font-family: LTKaff;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  text-align: right;
+  color: #607d8b;
+  direction: rtl;
+  padding-left: 14px;
+  padding-right: 14px;
+}

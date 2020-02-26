@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FullScreenAdsView" customModule="MBC" customModuleProvider="target">
+            <connections>
+                <outlet property="adsContainerView" destination="9nL-rm-2It" id="jX8-50-fxb"/>
+                <outlet property="closeButtonTopConstraint" destination="7aU-JA-Qcd" id="ouh-Lg-6bD"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="5rt-Ux-N8Q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKK-0M-z9W">
+                    <rect key="frame" x="32.5" y="191" width="310" height="285"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إعلان" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hys-yx-89x">
+                            <rect key="frame" x="145" y="10" width="21.5" height="12"/>
+                            <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nL-rm-2It">
+                            <rect key="frame" x="5" y="30" width="300" height="250"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="hCZ-QA-F0T"/>
+                                <constraint firstAttribute="height" constant="250" id="wuV-oU-EvU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="9nL-rm-2It" firstAttribute="leading" secondItem="gKK-0M-z9W" secondAttribute="leading" constant="5" id="4cx-Dx-KkE"/>
+                        <constraint firstAttribute="trailing" secondItem="9nL-rm-2It" secondAttribute="trailing" constant="5" id="57e-d6-Ppx"/>
+                        <constraint firstItem="hys-yx-89x" firstAttribute="centerX" secondItem="gKK-0M-z9W" secondAttribute="centerX" id="9cC-HS-IAz"/>
+                        <constraint firstItem="9nL-rm-2It" firstAttribute="top" secondItem="hys-yx-89x" secondAttribute="bottom" constant="8" id="9cD-pf-Bau"/>
+                        <constraint firstItem="hys-yx-89x" firstAttribute="top" secondItem="gKK-0M-z9W" secondAttribute="top" constant="10" id="D8f-39-A4A"/>
+                        <constraint firstAttribute="bottom" secondItem="9nL-rm-2It" secondAttribute="bottom" constant="5" id="jLw-Yl-hoh"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.navigation.arrowBack" translatesAutoresizingMaskIntoConstraints="NO" id="UOP-hP-h9U">
+                    <rect key="frame" x="345" y="36" width="16" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="Dwj-dB-XnI"/>
+                        <constraint firstAttribute="height" constant="12" id="YOV-SW-EwO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تخطى هذا الاعلان" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nh-P1-xLy">
+                    <rect key="frame" x="269" y="34" width="74" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="Hcv-DH-03j"/>
+                        <constraint firstAttribute="height" constant="16" id="sTy-rd-x0o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drk-F0-ph9">
+                    <rect key="frame" x="259" y="22" width="116" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bR1-ON-41s"/>
+                    </constraints>
+                    <connections>
+                        <action selector="closeViewTapped:" destination="-1" eventType="touchUpInside" id="BlA-3F-mmU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UOP-hP-h9U" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="7aU-JA-Qcd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="drk-F0-ph9" secondAttribute="trailing" id="9bq-tL-t34"/>
+                <constraint firstItem="drk-F0-ph9" firstAttribute="leading" secondItem="4nh-P1-xLy" secondAttribute="leading" constant="-10" id="C1z-F9-1Hv"/>
+                <constraint firstItem="4nh-P1-xLy" firstAttribute="centerY" secondItem="UOP-hP-h9U" secondAttribute="centerY" id="CS8-6M-Fzx"/>
+                <constraint firstItem="drk-F0-ph9" firstAttribute="centerY" secondItem="UOP-hP-h9U" secondAttribute="centerY" id="cwp-jc-Npo"/>
+                <constraint firstItem="gKK-0M-z9W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="idR-HB-idY"/>
+                <constraint firstItem="gKK-0M-z9W" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kaO-yf-aKC"/>
+                <constraint firstItem="UOP-hP-h9U" firstAttribute="leading" secondItem="4nh-P1-xLy" secondAttribute="trailing" constant="2" id="l53-N8-0gB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UOP-hP-h9U" secondAttribute="trailing" constant="14" id="sBw-ms-WaK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon.navigation.arrowBack" width="10" height="18"/>
+    </resources>
+</document>

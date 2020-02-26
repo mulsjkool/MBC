@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCellId" rowHeight="206" id="hNM-m8-QQS" customClass="MenuCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hNM-m8-QQS" id="Em2-Pn-WNV">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="205.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tq0-R2-bsR" userLabel="Cover Image">
+                        <rect key="frame" x="16" y="95" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tq0-R2-bsR" secondAttribute="height" multiplier="1:1" id="4qr-QX-RNr"/>
+                            <constraint firstAttribute="width" constant="16" id="RFl-0n-164"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6I-JG-jxo" userLabel="Menu Item Label">
+                        <rect key="frame" x="48" y="78" width="277" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="shH-bq-jF4"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="29LTKaff-SemiBold"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGk-RX-DbO" userLabel="Badge View">
+                        <rect key="frame" x="341" y="96" width="27" height="14"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhw-pg-g4M">
+                                <rect key="frame" x="0.0" y="0.0" width="27" height="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.32549019607843138" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="E2a-3P-ahR"/>
+                            <constraint firstItem="Yhw-pg-g4M" firstAttribute="height" secondItem="tGk-RX-DbO" secondAttribute="height" id="E32-Me-wG6"/>
+                            <constraint firstItem="Yhw-pg-g4M" firstAttribute="centerY" secondItem="tGk-RX-DbO" secondAttribute="centerY" id="KqG-cd-hNG"/>
+                            <constraint firstItem="Yhw-pg-g4M" firstAttribute="width" secondItem="tGk-RX-DbO" secondAttribute="width" id="PlK-AO-tvz"/>
+                            <constraint firstItem="Yhw-pg-g4M" firstAttribute="centerX" secondItem="tGk-RX-DbO" secondAttribute="centerX" id="t29-g9-FMK"/>
+                            <constraint firstAttribute="width" constant="27" id="zEp-74-BgH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tGk-RX-DbO" firstAttribute="centerY" secondItem="R6I-JG-jxo" secondAttribute="centerY" id="02N-S6-d7j"/>
+                    <constraint firstAttribute="trailing" secondItem="tGk-RX-DbO" secondAttribute="trailing" constant="7" id="FEt-vg-9Hh"/>
+                    <constraint firstItem="R6I-JG-jxo" firstAttribute="centerY" secondItem="tq0-R2-bsR" secondAttribute="centerY" id="PUH-FT-yZy"/>
+                    <constraint firstItem="tq0-R2-bsR" firstAttribute="leading" secondItem="Em2-Pn-WNV" secondAttribute="leading" constant="16" id="WS3-yn-fno"/>
+                    <constraint firstItem="R6I-JG-jxo" firstAttribute="leading" secondItem="tq0-R2-bsR" secondAttribute="trailing" constant="16" id="ZeF-aw-iCe"/>
+                    <constraint firstItem="tq0-R2-bsR" firstAttribute="centerY" secondItem="Em2-Pn-WNV" secondAttribute="centerY" id="n10-cg-W26"/>
+                    <constraint firstItem="tGk-RX-DbO" firstAttribute="leading" secondItem="R6I-JG-jxo" secondAttribute="trailing" constant="16" id="snK-AY-3gL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="badgeView" destination="tGk-RX-DbO" id="Vev-LG-ZlJ"/>
+                <outlet property="badgeWidthConstraint" destination="zEp-74-BgH" id="Fhy-ZZ-I3U"/>
+                <outlet property="labelSpaceBadgeConstraint" destination="snK-AY-3gL" id="EiU-g7-fYs"/>
+                <outlet property="logoView" destination="tq0-R2-bsR" id="wSS-bf-SuB"/>
+                <outlet property="logoViewWidthConstant" destination="RFl-0n-164" id="cJE-qu-o25"/>
+                <outlet property="menuLabel" destination="R6I-JG-jxo" id="icz-kx-tHj"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="48"/>
+        </tableViewCell>
+    </objects>
+</document>

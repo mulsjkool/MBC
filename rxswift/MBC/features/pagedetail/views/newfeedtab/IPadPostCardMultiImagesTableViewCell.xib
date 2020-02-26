@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IPadPostCardMultiImagesTableViewCellid" rowHeight="524" id="KGk-i7-Jjw" customClass="PostCardMultiImagesTableViewCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="984" height="528"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="984" height="527.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsb-2a-F5i" userLabel="View - image">
+                        <rect key="frame" x="24" y="24" width="456" height="459.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kwQ-Pa-FcA">
+                                <rect key="frame" x="0.0" y="0.0" width="456" height="456"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="456" id="hYX-bL-d45"/>
+                                    <constraint firstAttribute="height" constant="456" id="lIR-CU-Grv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kwQ-Pa-FcA" firstAttribute="leading" secondItem="dsb-2a-F5i" secondAttribute="leading" id="HXx-4M-s6T"/>
+                            <constraint firstItem="kwQ-Pa-FcA" firstAttribute="top" secondItem="dsb-2a-F5i" secondAttribute="top" id="fAX-Yt-8fV"/>
+                            <constraint firstAttribute="width" constant="456" id="kjT-Fc-0iu"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="456" id="x0L-s3-xDP"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giV-V5-Jva" userLabel="View - info">
+                        <rect key="frame" x="504" y="0.0" width="456" height="487.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wbx-Or-HSg" customClass="AvatarFullScreenView" customModule="MBC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="456" height="73"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="HZO-di-KGC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qu5-cB-wGa" customClass="InterestView" customModule="MBC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="73" width="456" height="16"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="1g9-2h-Xlw"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbw-0c-98j" userLabel="Label - title">
+                                <rect key="frame" x="0.0" y="93" width="456" height="0.0"/>
+                                <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="24"/>
+                                <color key="textColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH2-PS-VdL" userLabel="Label - description" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="0.0" y="105" width="456" height="0.0"/>
+                                <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="14"/>
+                                <color key="textColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1zQ-vq-TtH">
+                                <rect key="frame" x="0.0" y="129" width="456" height="136"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="eeR-WH-x8H"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ERu-CH-EVt">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Tx-8i-RuH" customClass="LikeCommentShareView" customModule="MBC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="455.5" width="456" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="nHd-KQ-2Ac"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Tx-8i-RuH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1zQ-vq-TtH" secondAttribute="bottom" constant="24" id="2Ph-Aj-MXa"/>
+                            <constraint firstItem="Wbx-Or-HSg" firstAttribute="top" secondItem="giV-V5-Jva" secondAttribute="top" id="7BB-Sb-zUa"/>
+                            <constraint firstAttribute="trailing" secondItem="Qu5-cB-wGa" secondAttribute="trailing" id="8rR-7w-3pc"/>
+                            <constraint firstAttribute="trailing" secondItem="1zQ-vq-TtH" secondAttribute="trailing" id="9I7-XQ-RXi"/>
+                            <constraint firstItem="1zQ-vq-TtH" firstAttribute="leading" secondItem="giV-V5-Jva" secondAttribute="leading" id="B4A-t2-oR6"/>
+                            <constraint firstAttribute="trailing" secondItem="Wbx-Or-HSg" secondAttribute="trailing" id="Kg1-PI-zXk"/>
+                            <constraint firstItem="NH2-PS-VdL" firstAttribute="leading" secondItem="giV-V5-Jva" secondAttribute="leading" id="PvM-h8-IVf"/>
+                            <constraint firstItem="Wbx-Or-HSg" firstAttribute="leading" secondItem="giV-V5-Jva" secondAttribute="leading" id="VgZ-Tf-mI0"/>
+                            <constraint firstItem="Hbw-0c-98j" firstAttribute="leading" secondItem="giV-V5-Jva" secondAttribute="leading" id="XPf-8k-Xvh"/>
+                            <constraint firstItem="1zQ-vq-TtH" firstAttribute="top" secondItem="NH2-PS-VdL" secondAttribute="bottom" constant="24" id="Y8S-Oq-ah1"/>
+                            <constraint firstAttribute="bottom" secondItem="1Tx-8i-RuH" secondAttribute="bottom" id="c22-pc-SGe"/>
+                            <constraint firstItem="Qu5-cB-wGa" firstAttribute="top" secondItem="Wbx-Or-HSg" secondAttribute="bottom" id="c99-ee-g7k"/>
+                            <constraint firstAttribute="trailing" secondItem="NH2-PS-VdL" secondAttribute="trailing" id="cO9-Ux-wly"/>
+                            <constraint firstItem="NH2-PS-VdL" firstAttribute="top" secondItem="Hbw-0c-98j" secondAttribute="bottom" constant="12" id="erq-04-yDZ"/>
+                            <constraint firstItem="Hbw-0c-98j" firstAttribute="top" secondItem="Qu5-cB-wGa" secondAttribute="bottom" constant="4" id="mnp-wt-s8y"/>
+                            <constraint firstAttribute="trailing" secondItem="1Tx-8i-RuH" secondAttribute="trailing" id="pWv-bE-ob8"/>
+                            <constraint firstAttribute="trailing" secondItem="Hbw-0c-98j" secondAttribute="trailing" id="s0c-LT-Rcf"/>
+                            <constraint firstItem="1Tx-8i-RuH" firstAttribute="leading" secondItem="giV-V5-Jva" secondAttribute="leading" id="vqA-EI-s7i"/>
+                            <constraint firstItem="Qu5-cB-wGa" firstAttribute="leading" secondItem="giV-V5-Jva" secondAttribute="leading" id="wAC-5N-e4o"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZc-rn-45H" userLabel="View - seperator">
+                        <rect key="frame" x="0.0" y="503.5" width="984" height="24"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="iIj-QW-kYp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pZc-rn-45H" secondAttribute="trailing" id="B0s-dS-EMD"/>
+                    <constraint firstAttribute="bottom" secondItem="dsb-2a-F5i" secondAttribute="bottom" constant="44" id="Qzf-4r-Yao"/>
+                    <constraint firstItem="pZc-rn-45H" firstAttribute="top" secondItem="giV-V5-Jva" secondAttribute="bottom" constant="16" id="TQr-VN-w8o"/>
+                    <constraint firstItem="giV-V5-Jva" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y0F-fT-wpa"/>
+                    <constraint firstItem="pZc-rn-45H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZHt-WW-zjz"/>
+                    <constraint firstItem="giV-V5-Jva" firstAttribute="leading" secondItem="dsb-2a-F5i" secondAttribute="trailing" constant="24" id="dZB-PB-sZn"/>
+                    <constraint firstItem="dsb-2a-F5i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="k2O-iF-iHW"/>
+                    <constraint firstAttribute="trailing" secondItem="giV-V5-Jva" secondAttribute="trailing" constant="24" id="o3R-rf-FeL"/>
+                    <constraint firstAttribute="bottom" secondItem="pZc-rn-45H" secondAttribute="bottom" id="qyy-F2-5SE"/>
+                    <constraint firstItem="dsb-2a-F5i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="wc8-1a-Nt2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorView" destination="Wbx-Or-HSg" id="tTQ-jj-hTQ"/>
+                <outlet property="collectionImages" destination="1zQ-vq-TtH" id="sK4-Od-uVa"/>
+                <outlet property="constraintHeightOfCollectionImage" destination="eeR-WH-x8H" id="4ZS-bX-qgg"/>
+                <outlet property="defaultImageView" destination="kwQ-Pa-FcA" id="lxG-rB-vyw"/>
+                <outlet property="defaultImageViewConstraintHeight" destination="lIR-CU-Grv" id="hVO-06-zBL"/>
+                <outlet property="descriptionLabelTopConstraint" destination="erq-04-yDZ" id="CZe-o9-KSa"/>
+                <outlet property="interestView" destination="Qu5-cB-wGa" id="qad-9X-O5G"/>
+                <outlet property="interestViewHeightConstraint" destination="1g9-2h-Xlw" id="Ufk-Wo-ppR"/>
+                <outlet property="interestViewTopConstraint" destination="c99-ee-g7k" id="Tig-W1-320"/>
+                <outlet property="labelTitleTopConstraint" destination="mnp-wt-s8y" id="3ba-fq-TZf"/>
+                <outlet property="lbDescription" destination="NH2-PS-VdL" id="C6V-Fc-IYh"/>
+                <outlet property="titleLabel" destination="Hbw-0c-98j" id="C38-Hm-MZR"/>
+                <outlet property="viewImageconstraintHeight" destination="x0L-s3-xDP" id="c61-Hg-BhM"/>
+                <outlet property="viewLikeCommentShare" destination="1Tx-8i-RuH" id="MAD-Sn-8fv"/>
+            </connections>
+            <point key="canvasLocation" x="-123" y="-248"/>
+        </tableViewCell>
+    </objects>
+</document>

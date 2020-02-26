@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationFormCellId" rowHeight="400" id="KGk-i7-Jjw" customClass="NotificationFormCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="399.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لزائر الكريم، وصلتنا رسالتك، وسيتم الرد عليك قريباً." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0H-MX-o4s">
+                        <rect key="frame" x="39" y="30" width="313" height="43.5"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="18"/>
+                        <color key="textColor" red="0.3411764705882353" green="0.27843137254901962" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="سوف نولى رسالتك أقصى اهتمامنا مع الأخذ بعين الاعتبار ضغط الرسائل الواردة إلينا" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5r-tU-PBo">
+                        <rect key="frame" x="39" y="89.5" width="313" height="168"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="26"/>
+                        <color key="textColor" red="0.3411764705882353" green="0.27843137254901962" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic.form.advertise.ok" translatesAutoresizingMaskIntoConstraints="NO" id="F6C-EO-NIt">
+                        <rect key="frame" x="155.5" y="289.5" width="80" height="80"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="t0H-MX-o4s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="6GW-eK-g0P"/>
+                    <constraint firstItem="F6C-EO-NIt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="EZ9-S2-vCg"/>
+                    <constraint firstItem="F6C-EO-NIt" firstAttribute="top" secondItem="k5r-tU-PBo" secondAttribute="bottom" priority="750" constant="32" id="Fll-9d-ZSk"/>
+                    <constraint firstItem="k5r-tU-PBo" firstAttribute="top" secondItem="t0H-MX-o4s" secondAttribute="bottom" constant="16" id="M6X-IR-7g2"/>
+                    <constraint firstItem="F6C-EO-NIt" firstAttribute="top" secondItem="t0H-MX-o4s" secondAttribute="bottom" priority="250" constant="32" id="gTM-MM-sMG"/>
+                    <constraint firstItem="k5r-tU-PBo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="j8A-PF-HiN"/>
+                    <constraint firstItem="t0H-MX-o4s" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.8" id="jp9-ob-Mc8"/>
+                    <constraint firstAttribute="bottom" secondItem="F6C-EO-NIt" secondAttribute="bottom" constant="30" id="l6R-WO-PZe"/>
+                    <constraint firstItem="t0H-MX-o4s" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lYP-mb-zu3"/>
+                    <constraint firstItem="k5r-tU-PBo" firstAttribute="width" secondItem="t0H-MX-o4s" secondAttribute="width" id="ubx-sF-oeQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomLabel" destination="k5r-tU-PBo" id="HYW-Yi-d2k"/>
+                <outlet property="iconImage" destination="F6C-EO-NIt" id="VmC-wC-gcN"/>
+                <outlet property="topLabel" destination="t0H-MX-o4s" id="M7x-Fa-QXc"/>
+            </connections>
+            <point key="canvasLocation" x="-653.5" y="-3"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic.form.advertise.ok" width="80" height="80"/>
+    </resources>
+</document>

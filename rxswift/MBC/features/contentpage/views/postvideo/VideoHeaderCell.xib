@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoHeaderCell" id="TMa-Gi-Z3G" customClass="VideoHeaderCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="407"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TMa-Gi-Z3G" id="wsX-Hi-LYb">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="406.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4K-LM-H96">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="o4K-LM-H96" secondAttribute="height" multiplier="16/9" id="Dbk-7p-9sg"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-K8-utf" userLabel="View - interest" customClass="InterestView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="227" width="375" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Zth-fK-QnR"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpT-ua-Kdn">
+                        <rect key="frame" x="16" y="259" width="343" height="0.0"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="18"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9k-Iy-oNN">
+                        <rect key="frame" x="16" y="271" width="343" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="12"/>
+                        <color key="textColor" red="0.37647058823529411" green="0.49019607843137253" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tly-Mq-Os3" userLabel="View - author" customClass="AvatarFullScreenView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="279" width="375" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="hh3-Cj-Hnz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-Un-0yu" customClass="LikeCommentShareView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="359" width="375" height="47.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="48" id="l1a-LJ-zEq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o4K-LM-H96" firstAttribute="leading" secondItem="wsX-Hi-LYb" secondAttribute="leading" id="0ax-gS-aA6"/>
+                    <constraint firstAttribute="trailing" secondItem="qpT-ua-Kdn" secondAttribute="trailing" constant="16" id="5I1-BK-j2X"/>
+                    <constraint firstItem="E9k-Iy-oNN" firstAttribute="leading" secondItem="wsX-Hi-LYb" secondAttribute="leading" constant="16" id="6nY-85-4jF"/>
+                    <constraint firstItem="G1h-K8-utf" firstAttribute="top" secondItem="o4K-LM-H96" secondAttribute="bottom" constant="16" id="81e-eX-XZc"/>
+                    <constraint firstItem="o4K-LM-H96" firstAttribute="top" secondItem="wsX-Hi-LYb" secondAttribute="top" id="BvD-UJ-U6o"/>
+                    <constraint firstItem="G1h-K8-utf" firstAttribute="leading" secondItem="wsX-Hi-LYb" secondAttribute="leading" id="Ce1-wO-pPH"/>
+                    <constraint firstAttribute="trailing" secondItem="G1h-K8-utf" secondAttribute="trailing" id="LK3-Sb-UeN"/>
+                    <constraint firstItem="qpT-ua-Kdn" firstAttribute="leading" secondItem="wsX-Hi-LYb" secondAttribute="leading" constant="16" id="PFD-WO-AvY"/>
+                    <constraint firstAttribute="trailing" secondItem="tly-Mq-Os3" secondAttribute="trailing" id="UWi-ZJ-trw"/>
+                    <constraint firstAttribute="trailing" secondItem="0Va-Un-0yu" secondAttribute="trailing" id="WMe-nG-z1c"/>
+                    <constraint firstAttribute="trailing" secondItem="E9k-Iy-oNN" secondAttribute="trailing" constant="16" id="XPh-Re-l2C"/>
+                    <constraint firstAttribute="bottom" secondItem="0Va-Un-0yu" secondAttribute="bottom" id="Ycx-Kf-6Tq"/>
+                    <constraint firstItem="0Va-Un-0yu" firstAttribute="top" secondItem="tly-Mq-Os3" secondAttribute="bottom" id="YxE-ca-0le"/>
+                    <constraint firstItem="tly-Mq-Os3" firstAttribute="leading" secondItem="wsX-Hi-LYb" secondAttribute="leading" id="eKW-Zr-ONM"/>
+                    <constraint firstItem="tly-Mq-Os3" firstAttribute="top" secondItem="E9k-Iy-oNN" secondAttribute="bottom" constant="8" id="frl-9c-tQM"/>
+                    <constraint firstItem="E9k-Iy-oNN" firstAttribute="top" secondItem="qpT-ua-Kdn" secondAttribute="bottom" constant="12" id="l1O-eI-hDR"/>
+                    <constraint firstItem="qpT-ua-Kdn" firstAttribute="top" secondItem="G1h-K8-utf" secondAttribute="bottom" constant="12" id="lI2-pi-XzK"/>
+                    <constraint firstAttribute="trailing" secondItem="o4K-LM-H96" secondAttribute="trailing" id="neO-mK-KH9"/>
+                    <constraint firstItem="0Va-Un-0yu" firstAttribute="leading" secondItem="wsX-Hi-LYb" secondAttribute="leading" id="uVD-Tu-vVh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorView" destination="tly-Mq-Os3" id="bRW-nM-lwm"/>
+                <outlet property="descriptionLabel" destination="E9k-Iy-oNN" id="wxQ-it-ArT"/>
+                <outlet property="descriptionLabelTopConstraint" destination="l1O-eI-hDR" id="kAn-WM-o3R"/>
+                <outlet property="interestView" destination="G1h-K8-utf" id="rYu-Dv-YKr"/>
+                <outlet property="interestViewHeightConstraint" destination="Zth-fK-QnR" id="hXR-uv-Nwn"/>
+                <outlet property="interestViewTopConstraint" destination="81e-eX-XZc" id="Hwa-jm-PW0"/>
+                <outlet property="titleLabel" destination="qpT-ua-Kdn" id="mRM-E4-2UG"/>
+                <outlet property="titleLabelTopConstraint" destination="lI2-pi-XzK" id="Cgk-hE-bko"/>
+                <outlet property="videoContainView" destination="o4K-LM-H96" id="XjL-IF-mDG"/>
+                <outlet property="viewLikeCommentShare" destination="0Va-Un-0yu" id="UkS-1T-3Ru"/>
+            </connections>
+            <point key="canvasLocation" x="-140" y="2"/>
+        </tableViewCell>
+    </objects>
+</document>

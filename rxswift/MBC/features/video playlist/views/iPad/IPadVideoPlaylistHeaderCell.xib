@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="iPadVideoPlaylistHeaderCell" rowHeight="210" id="KGk-i7-Jjw" customClass="IPadVideoPlaylistHeaderCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="209.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Slf-ig-TUg" customClass="InterestView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="24" y="24" width="273" height="20"/>
+                        <color key="backgroundColor" red="0.9390240312" green="0.3238713741" blue="0.31272161009999999" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CDz-3G-6Yw"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTI-cA-Gfl" userLabel="Description Label">
+                        <rect key="frame" x="24" y="48" width="273" height="13.5"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="24"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9n9-19-aQX" customClass="AvatarFullScreenView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="8" y="69.5" width="305" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="mSD-hQ-qEC"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQw-HK-2Z8" customClass="LikeCommentShareView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="19" y="157" width="294" height="48"/>
+                        <color key="backgroundColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="e56-vI-HuQ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLe-Qd-27R" userLabel="Line View">
+                        <rect key="frame" x="24" y="207.5" width="273" height="2"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.93725490196078431" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="KUg-9t-KiG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Slf-ig-TUg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="C0K-9K-fx8"/>
+                    <constraint firstAttribute="trailing" secondItem="Slf-ig-TUg" secondAttribute="trailing" constant="24" id="CJy-DO-GyE"/>
+                    <constraint firstAttribute="trailing" secondItem="UTI-cA-Gfl" secondAttribute="trailing" constant="24" id="Hj5-s8-w4Q"/>
+                    <constraint firstItem="wLe-Qd-27R" firstAttribute="top" secondItem="pQw-HK-2Z8" secondAttribute="bottom" constant="2" id="Ixj-JI-Bj6"/>
+                    <constraint firstAttribute="trailing" secondItem="pQw-HK-2Z8" secondAttribute="trailing" constant="8" id="KHa-MS-lfR"/>
+                    <constraint firstItem="UTI-cA-Gfl" firstAttribute="top" secondItem="Slf-ig-TUg" secondAttribute="bottom" constant="4" id="M3J-aV-33L"/>
+                    <constraint firstItem="9n9-19-aQX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="TFK-jz-MVk"/>
+                    <constraint firstAttribute="trailing" secondItem="9n9-19-aQX" secondAttribute="trailing" constant="8" id="UDG-Bj-ehH"/>
+                    <constraint firstItem="Slf-ig-TUg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="ctG-W6-Rkt"/>
+                    <constraint firstItem="UTI-cA-Gfl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="cxE-nB-N9J"/>
+                    <constraint firstItem="pQw-HK-2Z8" firstAttribute="top" secondItem="9n9-19-aQX" secondAttribute="bottom" constant="8" id="eEW-yg-0uY"/>
+                    <constraint firstAttribute="trailing" secondItem="wLe-Qd-27R" secondAttribute="trailing" constant="24" id="fon-ET-Nkb"/>
+                    <constraint firstItem="pQw-HK-2Z8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="nc8-YU-Ty9"/>
+                    <constraint firstItem="wLe-Qd-27R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="ujS-8E-Bxz"/>
+                    <constraint firstAttribute="bottom" secondItem="wLe-Qd-27R" secondAttribute="bottom" id="z6Y-hp-ozm"/>
+                    <constraint firstItem="9n9-19-aQX" firstAttribute="top" secondItem="UTI-cA-Gfl" secondAttribute="bottom" constant="8" id="zO2-EY-jPI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorView" destination="9n9-19-aQX" id="8mH-0e-gUO"/>
+                <outlet property="interestView" destination="Slf-ig-TUg" id="lTP-ZC-ocY"/>
+                <outlet property="titleLabel" destination="UTI-cA-Gfl" id="Dva-kF-oLQ"/>
+                <outlet property="viewLikeCommentShare" destination="pQw-HK-2Z8" id="6QF-XM-dRN"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="137"/>
+        </tableViewCell>
+    </objects>
+</document>

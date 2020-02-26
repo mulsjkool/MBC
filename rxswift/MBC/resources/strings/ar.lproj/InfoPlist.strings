@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  MBC
+
+  Created by Voong Tan Quoc Cuong on 2/26/18.
+  Copyright © 2018 MBC. All rights reserved.
+*/
+
+"NSPhotoLibraryUsageDescription" = "$(APP_NAME) want to access your photo library.";
+"NSCameraUsageDescription" = "$(APP_NAME) want to access your camera.";

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="29LT-Kaff-Regular.otf">
+            <string>29LTKaff-Regular</string>
+        </array>
+        <array key="29LT-Kaff-Semi-Bold.otf">
+            <string>29LTKaff-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleEmbeddedCell" id="pm0-Gb-3dM" customClass="ArticleEmbeddedCell" customModule="MBC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pm0-Gb-3dM" id="h3D-ZT-Rgi">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVd-gr-nMz">
+                        <rect key="frame" x="16" y="16" width="343" height="0.0"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-SemiBold" family="29LT Kaff" pointSize="16"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.1960784314" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lk7-gA-5wK">
+                        <rect key="frame" x="16" y="40" width="343" height="0.0"/>
+                        <fontDescription key="fontDescription" name="29LTKaff-Regular" family="29LT Kaff" pointSize="14"/>
+                        <color key="textColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yax-nz-aJg" customClass="EmbeddedWebView" customModule="MBC" customModuleProvider="target">
+                        <rect key="frame" x="16" y="48" width="343" height="1"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="wWE-6M-2xY"/>
+                        </constraints>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aVd-gr-nMz" secondAttribute="trailing" constant="16" id="7dx-5J-Jru"/>
+                    <constraint firstItem="Lk7-gA-5wK" firstAttribute="top" secondItem="aVd-gr-nMz" secondAttribute="bottom" constant="24" id="JFO-CS-K3b"/>
+                    <constraint firstAttribute="trailing" secondItem="yax-nz-aJg" secondAttribute="trailing" constant="16" id="Pdv-A6-pNW"/>
+                    <constraint firstAttribute="trailing" secondItem="Lk7-gA-5wK" secondAttribute="trailing" constant="16" id="U4q-Un-C2G"/>
+                    <constraint firstAttribute="bottom" secondItem="yax-nz-aJg" secondAttribute="bottom" id="aRC-ge-NHj"/>
+                    <constraint firstItem="yax-nz-aJg" firstAttribute="leading" secondItem="h3D-ZT-Rgi" secondAttribute="leading" constant="16" id="cUO-7E-jA3"/>
+                    <constraint firstItem="yax-nz-aJg" firstAttribute="top" secondItem="Lk7-gA-5wK" secondAttribute="bottom" constant="8" id="cxS-kY-nD8"/>
+                    <constraint firstItem="aVd-gr-nMz" firstAttribute="top" secondItem="h3D-ZT-Rgi" secondAttribute="top" constant="16" id="g9e-ar-a1A"/>
+                    <constraint firstItem="Lk7-gA-5wK" firstAttribute="leading" secondItem="h3D-ZT-Rgi" secondAttribute="leading" constant="16" id="lKv-W5-rGC"/>
+                    <constraint firstItem="aVd-gr-nMz" firstAttribute="leading" secondItem="h3D-ZT-Rgi" secondAttribute="leading" constant="16" id="uNH-dh-IH1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="Lk7-gA-5wK" id="3Z6-fN-rR0"/>
+                <outlet property="descriptionLabelTopConstraint" destination="JFO-CS-K3b" id="Gp7-9l-cec"/>
+                <outlet property="titleLabel" destination="aVd-gr-nMz" id="f4b-0h-HwN"/>
+                <outlet property="titleLabelTopConstraint" destination="g9e-ar-a1A" id="S65-zX-JZ7"/>
+                <outlet property="webView" destination="yax-nz-aJg" id="5rL-ra-AL1"/>
+                <outlet property="webViewHeightConstraint" destination="wWE-6M-2xY" id="akb-yj-6ex"/>
+            </connections>
+            <point key="canvasLocation" x="-300.5" y="-161"/>
+        </tableViewCell>
+    </objects>
+</document>
